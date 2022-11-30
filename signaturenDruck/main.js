@@ -34,10 +34,10 @@ const configNew = {
   showMenu: false,
   filterByLoc: false,
   example: {
-    shelfmark: 'PÄD:TG:1420:Dan::2017',
-    location: 'MAG',
+    shelfmark: 'UH 5610 EIC1 (8)',
+    location: 'UB',
     regex: '^(.*):(.*):(.*):(.*):(.*):(.*)$',
-    delimiter: ':'
+    delimiter: ' '
   },
   modal: {
     showModal: true,
@@ -48,7 +48,7 @@ const configNew = {
     printImmediately: true,
     SRUAddress: 'https://lokalsystem-test.ub.uni-mainz.de/bar2sig',
     QueryPart1: '?',
-    QueryPart1EPN: '?',
+    QueryPart1EPN: '',
     QueryPart2: ''
   },
   print: {
