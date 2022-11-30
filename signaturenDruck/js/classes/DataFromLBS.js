@@ -1,10 +1,9 @@
 const { net } = require('electron')
-const parser = require('xml2json')
 // const Shelfmark = require('../shelfmark.js')
 // const Modes = require('./Modes.js')
 // const config = remote.getGlobal('config')
 
-class DataFromSRU {
+class DataFromLBS {
   /*
  ----- Class getter and setter -----
    */
@@ -44,10 +43,8 @@ class DataFromSRU {
           allData += chunk
         })
         response.on('end', () => {
-          let options = {
-            object: true
-          }
-          data = parser.toJson(allData, options)
+
+          data = allData
 
           resolve(data)
         })
@@ -57,4 +54,4 @@ class DataFromSRU {
   }
 }
 
-module.exports = DataFromSRU
+module.exports = DataFromLBS

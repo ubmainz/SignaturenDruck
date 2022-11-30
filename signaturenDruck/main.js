@@ -44,12 +44,12 @@ const configNew = {
     modalTxt: 'Die ausgewählten Signaturen wurden gedruckt.'
   },
   SRU: {
-    useSRU: false,
-    printImmediately: false,
-    SRUAddress: 'http://sru.k10plus.de/opac-de-27',
-    QueryPart1: '?version=1.1&operation=searchRetrieve&query=pica.bar=',
-    QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=pica.epn=',
-    QueryPart2: '&maximumRecords=1&recordSchema=picaxml'
+    useSRU: true,
+    printImmediately: true,
+    SRUAddress: 'https://lokalsystem-test.ub.uni-mainz.de/bar2sig',
+    QueryPart1: '?',
+    QueryPart1EPN: '?',
+    QueryPart2: ''
   },
   print: {
     printCoverLabel: true
@@ -96,8 +96,8 @@ const menu = Menu.buildFromTemplate(template)
 // name of signature storage json
 const sigJSONFile = 'signaturen.json'
 
-const DataFromSRU = require('./js/classes/DataFromSRU.js')
-let sruData = new DataFromSRU()
+const DataFromLBS = require('./js/classes/DataFromLBS.js')
+let sruData = new DataFromLBS()
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -251,7 +251,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion())
+  mainWindow.setTitle('Signaturendruck/LBS-Hack für Mainz v' + app.getVersion())
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),

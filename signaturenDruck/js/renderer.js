@@ -16,7 +16,7 @@ const _ = require('lodash')
 
 const T = require('./classes/Table')
 const P = require('./classes/Print')
-const ShelfmarksFromSRUData = require('./classes/ShelfmarksFromSRUData')
+const ShelfmarksFromLBSData = require('./classes/ShelfmarksFromLBSData')
 
 let objSRU = {
   all: []
@@ -101,7 +101,7 @@ ipcRenderer.on('removeManualSignatures', function (event) {
 
 // ipc listener to add provided data to the SRU obj
 ipcRenderer.on('addSRUdata', function (event, xml, barcode, mode) {
-  let data = new ShelfmarksFromSRUData()
+  let data = new ShelfmarksFromLBSData()
   let shelfmark = data.getShelfmark(xml, barcode, mode)
   if (shelfmark.error !== '') {
     swal.fire('Achtung', shelfmark.error, 'error')
