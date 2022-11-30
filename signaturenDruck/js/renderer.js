@@ -107,7 +107,7 @@ ipcRenderer.on('addSRUdata', function (event, xml, barcode, mode) {
     swal.fire('Achtung', shelfmark.error, 'error')
       .then(() => {})
   } else {
-    if (shelfmark.PPN) {
+    if (shelfmark.txtOneLine.length > 1) {
       let index = objSRU.all.length
       objSRU.all[index] = shelfmark
       objSRU.all[index].id = index + 1
