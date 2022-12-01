@@ -34,7 +34,7 @@ class ShelfmarksFromLBSData {
     let mode = new Modes()
     let formats = new Formats()
     let formatArray = formats.formats
-    sig.error = getError(xml, key, dataMode)
+    sig.error = getError(xml.trim(), key, dataMode)
 
     if (sig.error === '') {
       let occ = '00'
@@ -45,7 +45,7 @@ class ShelfmarksFromLBSData {
         sig.ppn = key
       }
       sig.date = ''
-      sig.txtOneLine = xml
+      sig.txtOneLine = xml.trim()
       sig.exNr = ''
       sig.location = ''
       sig.loanIndication = ''
@@ -92,7 +92,7 @@ class ShelfmarksFromLBSData {
 
 function getError (object, key, mode) {
   try {
-    if (object.length > 1) {
+    if (object.length > 0) {
       return ''
     } else {
       return ': <b>' + key + '</b> wurde nicht gefunden.'
