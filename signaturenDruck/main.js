@@ -36,7 +36,7 @@ const configNew = {
   example: {
     shelfmark: '200 AP 14350 S377',
     location: 'UB',
-    regex: '^(.*)\\s(.*)\\s(.*)\\s(.*)$',
+    regex: '(.*)\\s(.*)\\s(.*)\\s(.*)\\s(.*)',
     delimiter: ' '
   },
   modal: {
