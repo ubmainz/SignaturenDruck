@@ -52,8 +52,7 @@ window.onload = function () {
       document.getElementById('chkbx_printImmediately').checked = true
     }
     if (!config.get('SRU.QueryPart1EPN')) {
-      document.getElementById('select_dataMode').disabled = true
-      swal.fire('Achtung', 'In der config.json fehlt der Eintrag: <b>SRU.QueryPart1EPN</b>\n\ndaher wurde die Suche via EPN deaktiviert.', 'info')
+      document.getElementById('select_dataMode').disabled = true      
     }
   }
 
