@@ -34,9 +34,9 @@ const configNew = {
   showMenu: false,
   filterByLoc: false,
   example: {
-    shelfmark: 'UH 5610 EIC1 (8)',
+    shelfmark: '200 AP 14350 S377',
     location: 'UB',
-    regex: '^(.*):(.*):(.*):(.*):(.*):(.*)$',
+    regex: '^(.*)\s*(.*)\s*(.*)\s*(.*)\s*(.*)\s*(.*)$',
     delimiter: ' '
   },
   modal: {

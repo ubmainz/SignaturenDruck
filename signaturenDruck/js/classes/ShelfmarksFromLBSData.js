@@ -40,9 +40,9 @@ class ShelfmarksFromLBSData {
       let occ = '00'
       sig.id = 99 // gets overwritten at a later stage
       if (dataMode === 'PPN') {
-        sig.ppn = 'PPN'
+        sig.ppn = xml
       } else {
-        sig.ppn = 'EPN'
+        sig.ppn = xml
       }
       sig.date = '01-01-20'
       sig.txtOneLine = xml
@@ -92,10 +92,10 @@ class ShelfmarksFromLBSData {
 
 function getError (object, key, mode) {
   try {
-    if (object !== '') {
+    if (object.length > 1) {
       return ''
     } else {
-      return mode + ': <b>' + key + '</b> wurde nicht gefunden.'
+      return ': <b>' + key + '</b> wurde nicht gefunden.'
     }
   } catch (e) {
     return e.message

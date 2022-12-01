@@ -122,7 +122,7 @@ ipcRenderer.on('addSRUdata', function (event, xml, barcode, mode) {
         table.addManualSignaturesToTable(table.manualSignature)
       }
     } else {
-      swal.fire('Achtung', 'Signatur mit ' + mode + ': ' + barcode + ' wurde nicht gefunden.', 'info')
+      swal.fire('Achtung', 'Signatur von ' + barcode + ' wurde nicht gefunden.', 'info')
     }
   }
 })
