@@ -1,70 +1,60 @@
 #previewBox.format_default_gross {
-width: 80mm;
-height: 43mm;
+width: 25mm;
+height: 50mm;
 }
 .format_default_gross {
-text-align: initial;
+text-align: center;
 white-space: nowrap;
 overflow: hidden;
 }
 .format_default_gross {
-align-items: center;
+align-items: initial;
 }
-#toPrint.format_default_gross> .innerBox {
-height: 43mm;
-width: 80mm;
-display: flex;
-justify-content: center;
-flex-direction: column;
+#toPrint.format_default_gross.innerBox {
+height: 50mm;
+width: 25mm;
 }
 .format_default_gross > .innerBox > p {
 margin: 0px 0px 0px 0px;
 }
 .format_default_gross > .innerBox > .line_1 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
-font-weight: bold;
+font-weight: normal;
 font-style: normal;
-margin-left: 47%;
+margin-left: 0%;
 }
 .format_default_gross > .innerBox > .line_2 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
-font-weight: bold;
+font-weight: normal;
 font-style: normal;
-margin-left: 47%;
+margin-left: 0%;
 }
 .format_default_gross > .innerBox > .line_3 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 47%;
+margin-left: 0%;
 }
 .format_default_gross > .innerBox > .line_4 {
-font-family: "Arial Narrow";
-font-size: 16pt;
-font-weight: normal;
-font-style: normal;
-margin-left: 47%;
-}
-.format_default_gross > .innerBox > .line_5 {
-font-family: "Arial Narrow";
-font-size: 16pt;
-font-weight: normal;
-font-style: normal;
-margin-left: 47%;
-}
-.format_default_gross > .innerBox > .line_6 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 47%;
+margin-left: 0%;
+}
+.format_default_gross > .innerBox > .line_5 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
 }
 @media print {
 #toPrint.format_default_gross > .innerBox {
-margin: 2.96mm 0mm 0mm 8.985mm;
+margin: 0mm 0mm 0mm -0.8mm;
 }
 body {
 margin: 0px;
