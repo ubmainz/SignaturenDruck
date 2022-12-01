@@ -36,7 +36,7 @@ const configNew = {
   example: {
     shelfmark: '200 AP 14350 S377',
     location: 'UB',
-    regex: '^(.*)\s*(.*)\s*(.*)\s*(.*)\s*(.*)\s*(.*)$',
+    regex: '^(.*)\\s(.*)\\s(.*)\\s(.*)$',
     delimiter: ' '
   },
   modal: {
@@ -251,7 +251,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck/LBS-Hack für Mainz v' + app.getVersion())
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' LBS Mainz v2')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),

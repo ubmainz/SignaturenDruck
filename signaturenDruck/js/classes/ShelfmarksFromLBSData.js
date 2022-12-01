@@ -40,11 +40,11 @@ class ShelfmarksFromLBSData {
       let occ = '00'
       sig.id = 99 // gets overwritten at a later stage
       if (dataMode === 'PPN') {
-        sig.ppn = xml
+        sig.ppn = key
       } else {
-        sig.ppn = xml
+        sig.ppn = key
       }
-      sig.date = '01-01-20'
+      sig.date = ''
       sig.txtOneLine = xml
       sig.exNr = ''
       sig.location = ''
