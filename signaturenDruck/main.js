@@ -46,7 +46,7 @@ const configNew = {
   SRU: {
     useSRU: true,
     printImmediately: true,
-    SRUAddress: 'https://lokalsystem-test.ub.uni-mainz.de/bar2sig',
+    SRUAddress: 'https://lokalsystem.ub.uni-mainz.de/bar2sig',
     QueryPart1: '?',
     QueryPart1EPN: '',
     QueryPart2: ''
@@ -251,7 +251,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' LBS Mainz v2')
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' LBS Mainz v4')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
