@@ -48,6 +48,19 @@ margin-left: 0%;
 .format_default_klein > .innerBox > .line_5 {
 font-family: "Arial Narrow";
 font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}.format_default_klein > .innerBox > .line_6 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_default_klein > .innerBox > .line_7 {
+font-family: "Arial Narrow";
+font-size: 16pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 0%;

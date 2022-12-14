@@ -10,20 +10,20 @@
     "width": "25400",
     "height": "50800"
   },
-  "lines": "5",
+  "lines": "7",
   "example": {
-    "shelfmark": "200 AP 14350 S377",
+    "shelfmark": "200 AP 14350 S681 A111(14) -33+3",
     "parts": [
       "200",
       " ",
       "AP",
       "14350",
-      "S377",
-      "200",
-      " ",
-      "AP",
-      "14350",
-      "S377"
+      "S681",
+      "A111(14)",
+      "-33+3",
+      "",
+      "",
+      ""
     ]
   },
   "centerHor": true,
@@ -62,8 +62,24 @@
       "italic": false,
       "indent": "0"
     },
-    {
+        {
       "id": 5,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+        {
+      "id": 6,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 7,
       "font": "Arial Narrow",
       "fontSize": "16",
       "bold": false,

@@ -52,6 +52,20 @@ font-weight: normal;
 font-style: normal;
 margin-left: 0%;
 }
+.format_default_gross > .innerBox > .line_6 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_default_gross > .innerBox > .line_7 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
 @media print {
 #toPrint.format_default_gross > .innerBox {
 margin: 0mm 0mm 0mm -0.8mm;
