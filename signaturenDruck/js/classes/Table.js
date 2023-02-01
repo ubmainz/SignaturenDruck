@@ -233,7 +233,7 @@ class Table {
       input.max = 99
       input.min = 1
       input.name = 'printCount'
-      input.value = 1
+      input.value = 2
       printCountCell.appendChild(input)
     }
   }
