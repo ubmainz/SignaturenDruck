@@ -45,7 +45,7 @@ const configNew = {
   },
   SRU: {
     useSRU: true,
-    printImmediately: true,
+    printImmediately: false,
     SRUAddress: 'https://lokalsystem.ub.uni-mainz.de/bar2sig',
     QueryPart1: '?',
     QueryPart1EPN: '',
