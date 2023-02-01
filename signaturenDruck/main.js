@@ -243,9 +243,9 @@ function createWindow () {
   checkConfig()
   // Create the browser window.
   if (!config.store.devMode) {
-    mainWindow = new BrowserWindow({ width: 850, height: 570, backgroundColor: '#f0f0f0' })
+    mainWindow = new BrowserWindow({ width: 850, height: 700, backgroundColor: '#f0f0f0' })
   } else {
-    mainWindow = new BrowserWindow({ width: 850, height: 600, backgroundColor: '#f0f0f0' })
+    mainWindow = new BrowserWindow({ width: 850, height: 730, backgroundColor: '#f0f0f0' })
   }
   if (config.store.showMenu) {
     Menu.setApplicationMenu(menu)
