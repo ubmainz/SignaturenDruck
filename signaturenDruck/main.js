@@ -51,7 +51,7 @@ const configNew = {
     modalTxt: 'Die ausgewählten Signaturen wurden gedruckt.'
   },
   SRU: {
-    useSRU: false,
+    useSRU: true,
     printImmediately: false,
     SRUAddress: 'https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz',
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
