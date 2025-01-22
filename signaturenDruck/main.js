@@ -266,7 +266,7 @@ function closeEditorWindow () {
   editorWindow = null
 }
 
-function windowParams (width = 850, height = 570, show = true) {
+function windowParams (width = 850, height = 700, show = true) {
   return {
     width: width,
     height: height,
@@ -305,7 +305,7 @@ function createWindow () {
   //options.webPreferences.preload = path.join(__dirname, 'js\\renderer.js')
 
   if (config.store.devMode) {
-    options.height = 600
+    options.height = 730
   }
 
   mainWindow = new BrowserWindow(options)
@@ -322,7 +322,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz 1.0')
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v3')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),

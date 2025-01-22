@@ -14,7 +14,7 @@ html, body {
   border-bottom: 1px solid black;
   overflow-x: hidden; 
   overflow-y: scroll;
-  height: 260px;
+  height: 390px;
   width: 100%;
   background-color: RGB(255, 254, 225);
 }

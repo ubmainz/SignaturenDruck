@@ -224,6 +224,7 @@ class Table {
       input.type = 'checkbox'
       input.name = 'toPrint'
       input.value = id
+      input.checked = 'checked'
       input.onclick = () => this.preview.changePreview(id, this.file.file, this._formats, this.manualSignature)
       printCell.appendChild(input)
     }
