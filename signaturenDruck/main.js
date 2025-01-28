@@ -39,11 +39,11 @@ const configNew = {
   useK10plus: true,
   hideDeleteBtn: false,
   showMenu: false,
-  filterByLoc: false,
+  filterByLoc: true,
   example: {
     shelfmark: '200 AP 14350 S377',
     location: 'UB',
-    regex: '(.*)\\s(.*)\\s(.*)\\s(.*)\\s(.*)\\s(.*)',
+    regex: '^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)',
     delimiter: ' '
   },
   modal: {
@@ -59,7 +59,7 @@ const configNew = {
     QueryPart2: '&maximumRecords=1&recordSchema=raw'
   },
   print: {
-    printCoverLabel: true,
+    printCoverLabel: false,
     reverseOrder: false,
     showPrintDialog: false,
     orientation: 'landscape',
@@ -372,7 +372,7 @@ function checkConfig () {
   if (config.get('mode.defaultMode') === 'thulbMode') {
     createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross'])
+    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'Magazin', 'MagazinEx', 'Frankreich'])
   }
 }
 

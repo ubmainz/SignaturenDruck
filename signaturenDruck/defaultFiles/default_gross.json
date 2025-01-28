@@ -1,6 +1,6 @@
 {
   "name": "default_gross",
-  "printer": "Microsoft Print to PDF",
+  "printer": "Pica II RVK",
   "label": {
     "width": "25mm",
     "height": "50mm"

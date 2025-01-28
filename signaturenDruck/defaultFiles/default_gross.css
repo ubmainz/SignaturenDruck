@@ -83,7 +83,7 @@ margin-top: 0mm;
 @page {
 size: 25mm 50mm;
 margin-top: 0mm;
-margin-left: 0mm;
+margin-left: 0.2mm;
 }
 body {
 margin: 0px;
