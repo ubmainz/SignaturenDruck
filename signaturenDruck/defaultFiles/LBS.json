@@ -1,23 +1,23 @@
 {
-  "name": "Frankreich",
+  "name": "LBS",
   "printer": "Pica II RVK",
   "label": {
-    "width": "25mm",
-    "height": "50mm"
+    "width": "27mm",
+    "height": "38mm"
   },
-  "pdfName": "Frankreich.pdf",
+  "pdfName": "LBS.pdf",
   "paper": {
-    "width": "25400",
-    "height": "50800"
+    "width": "27000",
+    "height": "38000"
   },
   "lines": "4",
   "example": {
-    "shelfmark": "2100 FAD 4961-CD 1/2",
+    "shelfmark": "13L 082-2,TX/CD,2.Aufl.",
     "parts": [
-      "2100",
-      "FAD",
-      "4961",
-      "CD 1/2"
+      "13 L",
+      "082",
+      "2,TX/CD",
+      ",2.Aufl."
     ]
   },
   "centerHor": true,
@@ -51,7 +51,7 @@
     {
       "id": 4,
       "font": "Arial",
-      "fontSize": "16",
+      "fontSize": "10",
       "bold": false,
       "italic": false,
       "indent": "0"

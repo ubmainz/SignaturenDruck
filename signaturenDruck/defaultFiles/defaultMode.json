@@ -6,7 +6,7 @@
       "format": "default_gross",
       "useRegEx": true,
       "exampleShelfmark": "200 AP 14350 S375",
-      "regEx": "^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)",
+      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$",
       "delimiter": " ",
       "result": [
         "$1",
@@ -25,7 +25,7 @@
       "format": "default_klein",
       "useRegEx": true,
       "exampleShelfmark": "200 AP 14350 S681 A111(14) -33+3",
-      "regEx": "^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)",
+      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$",
       "delimiter": " ",
       "result": [
         "$1",
@@ -41,27 +41,11 @@
     },
     {
       "id": 2,
-      "format": "Magazin",
+      "format": "ZB_Magazin",
       "useRegEx": true,
-      "regEx": "^[^\\w]*([24]?°?\\s?[A-ZÄÖÜa-zäöü]+)\\s(\\d+)-?(.*)",
+      "regEx": "^([24]?°?\\s?[A-Za-z]+)\\s(\\d+)-?(.*)$",
       "delimiter": " ",
-      "exampleShelfmark": "4° BE 9775-110,3.Ex.",
-      "result": [
-        "$1",
-        "$2",
-        "$3",
-        "$4"
-      ],
-      "exampleLoc": "UB",
-      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
-    },
-    {
-      "id": 3,
-      "format": "MagazinEx",
-      "useRegEx": true,
-      "regEx": "^[^\\w]*([24]?°?\\s?\\w+)\\s(\\d+)-?(.*),(\\d*\\.Ex\\.)",
-      "delimiter": " ",
-      "exampleShelfmark": "4° BE 9775-110,3.Ex.",
+      "exampleShelfmark": "4° BE 9775-110",
       "result": [
         "$1",
         "$2",
@@ -69,13 +53,13 @@
         "$4"
       ],
       "exampleLoc": "ZB Magazin",
-      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
+      "locRegEx": "^ZB\\sMagazin$|^ZB\\sRara$"
     },
     {
-      "id": 4,
+      "id": 3,
       "format": "Frankreich",
       "useRegEx": true,
-      "regEx": "^[^\\w]*(\\d{4})\\s([A-Za-z]+)\\s(\\d*)-?(.*)",
+      "regEx": "^(\\d{4})\\s([A-Za-z]+)\\s(\\d*)-?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "2100 FAD 4961-CD 1/2",
       "result": [
@@ -85,7 +69,68 @@
         "$4"
       ],
       "exampleLoc": "ZB Magazin",
-      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
+      "locRegEx": "^ZB\\sMagazin$|^ZB\\sRara$"
+    },
+    {
+      "id": 4,
+      "format": "USA",
+      "useRegEx": true,
+      "regEx": "^(\\d{3}\\.?\\d*)\\s(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "973.41092 WAS-2,23",
+      "result": [
+        "$1",
+        "$2"
+      ],
+      "exampleLoc": "USA-Bibliothek",
+      "locRegEx": "^USA-Bibliothek$"
+    },
+    {
+      "id": 5,
+      "format": "LBS",
+      "useRegEx": true,
+      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)-?([^\\(]*)",
+      "delimiter": " ",
+      "exampleShelfmark": "13L 082-2,TX/CD,2.Aufl.",
+      "result": [
+        "$1 $2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "ZB Lehrbuchsammlung",
+      "locRegEx": "^ZB Lehrbuchsammlung$"
+    },
+    {
+      "id": 6,
+      "format": "ZB_UM_Lesesaal",
+      "useRegEx": true,
+      "regEx": "^([A-ZÄÖÜ]+)\\s([A-ZÄÖÜ])\\s([0-9/]+)-?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "THEOL C 711-3.F.,9",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "ZB Lesesaal",
+      "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
+    },
+    {
+      "id": 7,
+      "format": "ZB_Freihand",
+      "useRegEx": true,
+      "regEx": "^0*(\\d+)\\.(\\d+)[^\\w]?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "043.169-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "ZB Freihand",
+      "locRegEx": "^ZB\\sFreihand$"
     }
   ]
 }

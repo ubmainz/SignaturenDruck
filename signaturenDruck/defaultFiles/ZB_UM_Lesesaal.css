@@ -1,0 +1,67 @@
+#previewBox.format_ZB_UM_Lesesaal {
+width: 27mm;
+height: 38mm;
+}
+.format_ZB_UM_Lesesaal {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_ZB_UM_Lesesaal {
+align-items: initial;
+}
+#toPrint.format_ZB_UM_Lesesaal > .capsule {
+height: 38mm;
+width: 27mm;
+overflow: hidden;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > p,
+.format_ZB_UM_Lesesaal > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_1,
+.format_ZB_UM_Lesesaal > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_2,
+.format_ZB_UM_Lesesaal > .innerBox > .line_2 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_3,
+.format_ZB_UM_Lesesaal > .innerBox > .line_3 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_4,
+.format_ZB_UM_Lesesaal > .innerBox > .line_4 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_1,
+.format_ZB_UM_Lesesaal > .innerBox > .line_1 {
+margin-top: 4mm;
+}
+@media print {
+@page {
+size: 27mm 38mm;
+margin-top: 0mm;
+margin-left: 0mm;
+}
+body {
+margin: 0px;
+}
+}

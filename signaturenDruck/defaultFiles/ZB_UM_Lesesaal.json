@@ -1,23 +1,23 @@
 {
-  "name": "MagazinEx",
+  "name": "ZB_UM_Lesesaal",
   "printer": "Pica II RVK",
   "label": {
-    "width": "25mm",
-    "height": "50mm"
+    "width": "27mm",
+    "height": "38mm"
   },
-  "pdfName": "MagazinEx.pdf",
+  "pdfName": "ZB_UM_Lesesaal.pdf",
   "paper": {
-    "width": "25400",
-    "height": "50800"
+    "width": "27000",
+    "height": "38000"
   },
   "lines": "4",
   "example": {
-    "shelfmark": "4° BF 838-2,2.Ex.",
+    "shelfmark": "THEOL C 711-3.F.,9",
     "parts": [
-      "4° BF",
-      "838",
-      "2",
-      "2.Ex."
+      "THEOL",
+      "C",
+      "711",
+      "3.F.,9"
     ]
   },
   "centerHor": true,
@@ -26,23 +26,23 @@
   "linesData": [
     {
       "id": 1,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     },
     {
       "id": 2,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     },
     {
       "id": 3,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
       "bold": false,
       "italic": false,
@@ -57,5 +57,5 @@
       "indent": "0"
     }
   ],
-  "marginTop": "0"
+  "marginTop": "4"
 }

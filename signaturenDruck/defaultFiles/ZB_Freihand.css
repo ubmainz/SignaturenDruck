@@ -1,0 +1,59 @@
+#previewBox.format_ZB_Freihand {
+width: 27mm;
+height: 38mm;
+}
+.format_ZB_Freihand {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_ZB_Freihand {
+align-items: initial;
+}
+#toPrint.format_ZB_Freihand > .capsule {
+height: 38mm;
+width: 27mm;
+overflow: hidden;
+}
+.format_ZB_Freihand > .capsule > .innerBox > p,
+.format_ZB_Freihand > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_ZB_Freihand > .capsule > .innerBox > .line_1,
+.format_ZB_Freihand > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_Freihand > .capsule > .innerBox > .line_2,
+.format_ZB_Freihand > .innerBox > .line_2 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_Freihand > .capsule > .innerBox > .line_3,
+.format_ZB_Freihand > .innerBox > .line_3 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_Freihand > .capsule > .innerBox > .line_1,
+.format_ZB_Freihand > .innerBox > .line_1 {
+margin-top: 5mm;
+}
+@media print {
+@page {
+size: 27mm 38mm;
+margin-top: 0mm;
+margin-left: 0mm;
+}
+body {
+margin: 0px;
+}
+}

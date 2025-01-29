@@ -1,23 +1,23 @@
 {
-  "name": "Frankreich",
+  "name": "ZB_Magazin",
   "printer": "Pica II RVK",
   "label": {
     "width": "25mm",
     "height": "50mm"
   },
-  "pdfName": "Frankreich.pdf",
+  "pdfName": "ZB_Magazin.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
   "lines": "4",
   "example": {
-    "shelfmark": "2100 FAD 4961-CD 1/2",
+    "shelfmark": "4° BE 9775-110",
     "parts": [
-      "2100",
-      "FAD",
-      "4961",
-      "CD 1/2"
+      "4° BE",
+      "9775",
+      "110",
+      ""
     ]
   },
   "centerHor": true,

@@ -1,0 +1,54 @@
+#previewBox.format_USA {
+width: 52mm;
+height: 20mm;
+}
+.format_USA {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_USA {
+align-items: center;
+}
+#toPrint.format_USA > .capsule {
+height: 20mm;
+width: 52mm;
+display: flex;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+}
+.format_USA > .capsule > .innerBox > p,
+.format_USA > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_USA > .capsule > .innerBox > .line_1,
+.format_USA > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_USA > .capsule > .innerBox > .line_2,
+.format_USA > .innerBox > .line_2 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_USA > .capsule > .innerBox > .line_1,
+.format_USA > .innerBox > .line_1 {
+margin-top: 0mm;
+}
+@media print {
+@page {
+size: 52mm 20mm;
+margin-top: 0mm;
+margin-left: 0mm;
+}
+body {
+margin: 0px;
+}
+}

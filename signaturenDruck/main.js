@@ -43,7 +43,7 @@ const configNew = {
   example: {
     shelfmark: '200 AP 14350 S377',
     location: 'UB',
-    regex: '^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)',
+    regex: '^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$',
     delimiter: ' '
   },
   modal: {
@@ -62,7 +62,7 @@ const configNew = {
     printCoverLabel: false,
     reverseOrder: false,
     showPrintDialog: false,
-    orientation: 'landscape',
+    orientation: 'portrait',
     scale: 'noscale',
     margin: {
       top: 0,
@@ -372,7 +372,7 @@ function checkConfig () {
   if (config.get('mode.defaultMode') === 'thulbMode') {
     createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'Magazin', 'MagazinEx', 'Frankreich'])
+    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal'])
   }
 }
 
