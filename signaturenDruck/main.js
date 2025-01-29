@@ -39,27 +39,27 @@ const configNew = {
   useK10plus: true,
   hideDeleteBtn: false,
   showMenu: false,
-  filterByLoc: false,
+  filterByLoc: true,
   example: {
-    shelfmark: 'PÄD:TG:1420:Dan::2017',
-    location: 'MAG',
-    regex: '^(.*):(.*):(.*):(.*):(.*):(.*)$',
-    delimiter: ':'
+    shelfmark: '200 AP 14350 S377',
+    location: 'UB',
+    regex: '^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)',
+    delimiter: ' '
   },
   modal: {
     showModal: true,
     modalTxt: 'Die ausgewählten Signaturen wurden gedruckt.'
   },
   SRU: {
-    useSRU: false,
+    useSRU: true,
     printImmediately: false,
-    SRUAddress: 'https://sru.k10plus.de/opac-de-27',
-    QueryPart1: '?version=1.1&operation=searchRetrieve&query=pica.bar=',
-    QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=pica.epn=',
-    QueryPart2: '&maximumRecords=1&recordSchema=picaxml'
+    SRUAddress: 'https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz',
+    QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
+    QueryPart1EPN: '',
+    QueryPart2: '&maximumRecords=1&recordSchema=raw'
   },
   print: {
-    printCoverLabel: true,
+    printCoverLabel: false,
     reverseOrder: false,
     showPrintDialog: false,
     orientation: 'landscape',
@@ -266,7 +266,7 @@ function closeEditorWindow () {
   editorWindow = null
 }
 
-function windowParams (width = 850, height = 570, show = true) {
+function windowParams (width = 850, height = 700, show = true) {
   return {
     width: width,
     height: height,
@@ -305,7 +305,7 @@ function createWindow () {
   //options.webPreferences.preload = path.join(__dirname, 'js\\renderer.js')
 
   if (config.store.devMode) {
-    options.height = 600
+    options.height = 730
   }
 
   mainWindow = new BrowserWindow(options)
@@ -322,7 +322,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion())
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v4')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
@@ -372,7 +372,7 @@ function checkConfig () {
   if (config.get('mode.defaultMode') === 'thulbMode') {
     createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross'])
+    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'Magazin', 'MagazinEx', 'Frankreich'])
   }
 }
 

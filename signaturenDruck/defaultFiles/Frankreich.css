@@ -1,0 +1,67 @@
+#previewBox.format_Frankreich {
+width: 25mm;
+height: 50mm;
+}
+.format_Frankreich {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_Frankreich {
+align-items: initial;
+}
+#toPrint.format_Frankreich > .capsule {
+height: 50mm;
+width: 25mm;
+overflow: hidden;
+}
+.format_Frankreich > .capsule > .innerBox > p,
+.format_Frankreich > .innerBox > p {
+margin: 0px 0px 0px 0px;
+}
+.format_Frankreich > .capsule > .innerBox > .line_1,
+.format_Frankreich > .innerBox > .line_1 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_Frankreich > .capsule > .innerBox > .line_2,
+.format_Frankreich > .innerBox > .line_2 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_Frankreich > .capsule > .innerBox > .line_3,
+.format_Frankreich > .innerBox > .line_3 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_Frankreich > .capsule > .innerBox > .line_4,
+.format_Frankreich > .innerBox > .line_4 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_Frankreich > .capsule > .innerBox > .line_1,
+.format_Frankreich > .innerBox > .line_1 {
+margin-top: 0mm;
+}
+@media print {
+@page {
+size: 25.4mm 50.8mm;
+margin-top: 0.4mm;
+margin-left: 0.2mm;
+}
+body {
+margin: 0px;
+}
+}

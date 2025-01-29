@@ -5,19 +5,87 @@
       "id": 0,
       "format": "default_gross",
       "useRegEx": true,
-      "exampleShelfmark": "PÄD:TG:1420:Dan::2017",
-      "regEx": "(.*):(.*):(.*):(.*):(.*):(.*)",
-      "delimiter": ":",
-      "result": ["Standort: $LOC", "$1 $2", "$3", "$4", "$5", "$6"]
+      "exampleShelfmark": "200 AP 14350 S375",
+      "regEx": "^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)",
+      "delimiter": " ",
+      "result": [
+        "$1",
+        "",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6"
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
     },
     {
       "id": 1,
       "format": "default_klein",
       "useRegEx": true,
-      "exampleShelfmark": "2018 B 1024 :1",
-      "regEx": "^(\\w+\\s[\\w\\.\\,]+)([\\s\\/]?)([^\\/\\:]*)([\\/\\:]?)(.*)$",
-      "delimiter": ":",
-      "result": ["$1$2", "$3$4", "$5$6"]
+      "exampleShelfmark": "200 AP 14350 S681 A111(14) -33+3",
+      "regEx": "^[^\\w]*(\\d{3})\\s(\\w+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)",
+      "delimiter": " ",
+      "result": [
+        "$1",
+        "",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6"
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
+    },
+    {
+      "id": 2,
+      "format": "Magazin",
+      "useRegEx": true,
+      "regEx": "^[^\\w]*([24]?°?\\s?[A-ZÄÖÜa-zäöü]+)\\s(\\d+)-?(.*)",
+      "delimiter": " ",
+      "exampleShelfmark": "4° BE 9775-110,3.Ex.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
+    },
+    {
+      "id": 3,
+      "format": "MagazinEx",
+      "useRegEx": true,
+      "regEx": "^[^\\w]*([24]?°?\\s?\\w+)\\s(\\d+)-?(.*),(\\d*\\.Ex\\.)",
+      "delimiter": " ",
+      "exampleShelfmark": "4° BE 9775-110,3.Ex.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "ZB Magazin",
+      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
+    },
+    {
+      "id": 4,
+      "format": "Frankreich",
+      "useRegEx": true,
+      "regEx": "^[^\\w]*(\\d{4})\\s([A-Za-z]+)\\s(\\d*)-?(.*)",
+      "delimiter": " ",
+      "exampleShelfmark": "2100 FAD 4961-CD 1/2",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "ZB Magazin",
+      "locRegEx": "^ZB\\sMagazin|^ZB\\sRara"
     }
   ]
 }
