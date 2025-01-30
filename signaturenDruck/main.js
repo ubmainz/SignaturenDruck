@@ -322,7 +322,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v5')
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v6')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),

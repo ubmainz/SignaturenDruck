@@ -53,13 +53,13 @@
         "$4"
       ],
       "exampleLoc": "ZB Magazin",
-      "locRegEx": "^ZB\\sMagazin$|^ZB\\sRara$"
+      "locRegEx": "^ZB\\sMagazin$"
     },
     {
       "id": 3,
       "format": "Frankreich",
       "useRegEx": true,
-      "regEx": "^(\\d{4})\\s([A-Za-z]+)\\s(\\d*)-?(.*)$",
+      "regEx": "^(\\d{4})\\s([A-Za-z]+)\\s(\\d*)\\W?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "2100 FAD 4961-CD 1/2",
       "result": [
@@ -69,7 +69,7 @@
         "$4"
       ],
       "exampleLoc": "ZB Magazin",
-      "locRegEx": "^ZB\\sMagazin$|^ZB\\sRara$"
+      "locRegEx": "^ZB\\sMagazin$"
     },
     {
       "id": 4,
@@ -89,7 +89,7 @@
       "id": 5,
       "format": "LBS",
       "useRegEx": true,
-      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)[^\\w]?([^\\(]*)",
+      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)\\W?([^\\(\\.]*[^,\\(\\.])?,?(\\b\\d+\\.Aufl\\.|$|\\s)",
       "delimiter": " ",
       "exampleShelfmark": "13L 082-2,TX/CD,2.Aufl.",
       "result": [
@@ -121,7 +121,7 @@
       "id": 7,
       "format": "ZB_Freihand",
       "useRegEx": true,
-      "regEx": "^0*(\\d+)\\.(\\d+)[^\\w]?(.*)$",
+      "regEx": "^0*(\\d+)\\.(\\d+)\\W?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "043.169-1",
       "result": [
@@ -131,6 +131,23 @@
       ],
       "exampleLoc": "ZB Freihand",
       "locRegEx": "^ZB\\sFreihand$"
+    },
+    {
+      "id": 8,
+      "format": "Rara",
+      "useRegEx": true,
+      "regEx": "^(RARA\\s)?([24]?°?\\s?[A-Za-z]+)\\s(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "2° Si 481",
+      "result": [
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "Rara"
+      ],
+      "exampleLoc": "ZB Rara",
+      "locRegEx": "^ZB\\sRara$"
     }
   ]
 }

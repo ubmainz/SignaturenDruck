@@ -1,23 +1,24 @@
 {
-  "name": "LBS",
+  "name": "Rara",
   "printer": "Pica II RVK",
   "label": {
-    "width": "27mm",
-    "height": "38mm"
+    "width": "25mm",
+    "height": "50mm"
   },
-  "pdfName": "LBS.pdf",
+  "pdfName": "Rara.pdf",
   "paper": {
-    "width": "27000",
-    "height": "38000"
+    "width": "25400",
+    "height": "50800"
   },
-  "lines": "4",
+  "lines": "5",
   "example": {
-    "shelfmark": "13L 082-2,TX/CD,2.Aufl.",
+    "shelfmark": "2° Si 481",
     "parts": [
-      "13 L",
-      "082",
-      "2,TX/CD",
-      "2.Aufl."
+      "2° Si",
+      "481",
+      "",
+      "",
+      "Rara"
     ]
   },
   "centerHor": true,
@@ -42,7 +43,7 @@
     },
     {
       "id": 3,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
       "bold": false,
       "italic": false,
@@ -51,8 +52,16 @@
     {
       "id": 4,
       "font": "Arial",
-      "fontSize": "12",
+      "fontSize": "16",
       "bold": false,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 5,
+      "font": "Arial",
+      "fontSize": "12",
+      "bold": true,
       "italic": false,
       "indent": "0"
     }
