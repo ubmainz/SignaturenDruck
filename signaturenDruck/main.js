@@ -372,7 +372,7 @@ function checkConfig () {
   if (config.get('mode.defaultMode') === 'thulbMode') {
     createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal'])
+    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara'])
   }
 }
 
