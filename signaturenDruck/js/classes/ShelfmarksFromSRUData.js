@@ -82,7 +82,8 @@ class ShelfmarksFromSRUData {
             sig.txtOneLine = [
                  xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/prefix)", sru),
                  xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/callNumber)", sru),
-                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/suffix)", sru)
+                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/suffix)", sru),
+                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/chronology)", sru)
                  ].filter(Boolean).join(" ")
             sig.location = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/../permanentLocation/name)", sru)
             sig.exNr = sig.location
