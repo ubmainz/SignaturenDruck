@@ -1,0 +1,52 @@
+{
+  "name": "TSK_Magazin_Mo",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "27mm",
+    "height": "45mm"
+  },
+  "pdfName": "TSK_Magazin_Mo.pdf",
+  "paper": {
+    "width": "27000",
+    "height": "45000"
+  },
+  "lines": "3",
+  "example": {
+    "shelfmark": "84001041",
+    "parts": [
+      "84",
+      "001",
+      "041"
+    ]
+  },
+  "centerHor": false,
+  "centerVer": false,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "10"
+    },
+    {
+      "id": 2,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "10"
+    },
+    {
+      "id": 3,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "10"
+    }
+  ],
+  "marginTop": "10"
+}

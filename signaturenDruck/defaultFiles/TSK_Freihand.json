@@ -1,0 +1,61 @@
+{
+  "name": "TSK_Freihand",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "27mm",
+    "height": "45mm"
+  },
+  "pdfName": "TSK_Freihand.pdf",
+  "paper": {
+    "width": "27000",
+    "height": "45000"
+  },
+  "lines": "4",
+  "example": {
+    "shelfmark": "TRA-ALLG 12:3-1",
+    "parts": [
+      "TRA-ALLG",
+      "12:",
+      "3-1",
+      ""
+    ]
+  },
+  "centerHor": false,
+  "centerVer": false,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "4"
+    },
+    {
+      "id": 2,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "4"
+    },
+    {
+      "id": 3,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "4"
+    },
+    {
+      "id": 4,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "4"
+    }
+  ],
+  "marginTop": "2"
+}

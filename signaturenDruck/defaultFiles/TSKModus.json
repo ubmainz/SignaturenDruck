@@ -1,0 +1,51 @@
+{
+  "modeName": "TSKModus",
+  "subModes": [
+    {
+      "id": 0,
+      "format": "TSK_Magazin_Mo",
+      "useRegEx": true,
+      "regEx": "^(\\d{2})(\\d{3})(\\d{3})$",
+      "delimiter": " ",
+      "exampleShelfmark": "84001041",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "BB TSK Magazin",
+      "locRegEx": "^BB\\sTSK\\sMagazin$"
+    },
+    {
+      "id": 1,
+      "format": "TSK_Magazin_Zs",
+      "useRegEx": true,
+      "regEx": "^(Z\\s\\d+)\\s?(.{0,4}[^\\s]{0,4})\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "Z 796 1995 23,3",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "BB TSK Magazin",
+      "locRegEx": "^BB\\sTSK\\sMagazin$"
+    },
+    {
+      "id": 2,
+      "format": "TSK_Freihand",
+      "useRegEx": true,
+      "regEx": "^([^\\s]+)\\s(\\d\\d\\W)([^\\(]*[^\\(\\s])\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "TRA-ALLG 12:3-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "BB TSK Freihand",
+      "locRegEx": "^BB\\sTSK\\sFreihand$"
+    }
+  ]
+}
