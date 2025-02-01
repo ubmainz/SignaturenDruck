@@ -1,6 +1,6 @@
 #previewBox.format_ZB_UM_Lesesaal {
-width: 27mm;
-height: 38mm;
+width: 26mm;
+height: 37mm;
 }
 .format_ZB_UM_Lesesaal {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_ZB_UM_Lesesaal > .capsule {
-height: 38mm;
-width: 27mm;
+height: 37mm;
+width: 26mm;
 overflow: hidden;
 }
 .format_ZB_UM_Lesesaal > .capsule > .innerBox > p,
@@ -58,8 +58,8 @@ margin-top: 4mm;
 @media print {
 @page {
 size: 27mm 38mm;
-margin-top: 0mm;
-margin-left: 0mm;
+margin-top: 0.5mm;
+margin-left: 0.5mm;
 }
 body {
 margin: 0px;

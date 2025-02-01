@@ -1,6 +1,6 @@
 #previewBox.format_Frankreich {
-width: 25mm;
-height: 50mm;
+width: 24mm;
+height: 49mm;
 }
 .format_Frankreich {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_Frankreich > .capsule {
-height: 50mm;
-width: 25mm;
+height: 49mm;
+width: 24mm;
 overflow: hidden;
 }
 .format_Frankreich > .capsule > .innerBox > p,
@@ -58,8 +58,8 @@ margin-top: 5mm;
 @media print {
 @page {
 size: 25.4mm 50.8mm;
-margin-top: 0.4mm;
-margin-left: 0.2mm;
+margin-top: 0.9mm;
+margin-left: 0.7mm;
 }
 body {
 margin: 0px;

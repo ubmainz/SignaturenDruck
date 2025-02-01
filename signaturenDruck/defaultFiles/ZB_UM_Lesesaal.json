@@ -2,8 +2,8 @@
   "name": "ZB_UM_Lesesaal",
   "printer": "Pica II RVK",
   "label": {
-    "width": "27mm",
-    "height": "38mm"
+    "width": "26mm",
+    "height": "37mm"
   },
   "pdfName": "ZB_UM_Lesesaal.pdf",
   "paper": {

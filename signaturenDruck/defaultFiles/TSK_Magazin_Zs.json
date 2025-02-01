@@ -2,8 +2,8 @@
   "name": "TSK_Magazin_Zs",
   "printer": "Pica II RVK",
   "label": {
-    "width": "27mm",
-    "height": "45mm"
+    "width": "26mm",
+    "height": "44mm"
   },
   "pdfName": "TSK_Magazin_Zs.pdf",
   "paper": {

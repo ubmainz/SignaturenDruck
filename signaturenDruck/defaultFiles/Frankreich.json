@@ -2,8 +2,8 @@
   "name": "Frankreich",
   "printer": "Pica II RVK",
   "label": {
-    "width": "25mm",
-    "height": "50mm"
+    "width": "24mm",
+    "height": "49mm"
   },
   "pdfName": "Frankreich.pdf",
   "paper": {

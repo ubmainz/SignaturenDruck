@@ -2,8 +2,8 @@
   "name": "Rara",
   "printer": "Pica II RVK",
   "label": {
-    "width": "25mm",
-    "height": "50mm"
+    "width": "24mm",
+    "height": "49mm"
   },
   "pdfName": "Rara.pdf",
   "paper": {

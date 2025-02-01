@@ -2,8 +2,8 @@
   "name": "USA",
   "printer": "Pica II RVK",
   "label": {
-    "width": "52mm",
-    "height": "20mm"
+    "width": "51mm",
+    "height": "19mm"
   },
   "pdfName": "USA.pdf",
   "paper": {

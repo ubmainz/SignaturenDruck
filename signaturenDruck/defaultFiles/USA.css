@@ -1,6 +1,6 @@
 #previewBox.format_USA {
-width: 52mm;
-height: 20mm;
+width: 51mm;
+height: 19mm;
 }
 .format_USA {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: center;
 }
 #toPrint.format_USA > .capsule {
-height: 20mm;
-width: 52mm;
+height: 19mm;
+width: 51mm;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -45,8 +45,8 @@ margin-top: 0mm;
 @media print {
 @page {
 size: 52mm 20mm;
-margin-top: 0mm;
-margin-left: 0mm;
+margin-top: 0.5mm;
+margin-left: 0.5mm;
 }
 body {
 margin: 0px;

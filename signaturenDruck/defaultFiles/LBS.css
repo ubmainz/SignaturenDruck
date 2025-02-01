@@ -1,6 +1,6 @@
 #previewBox.format_LBS {
-width: 27mm;
-height: 38mm;
+width: 26mm;
+height: 37mm;
 }
 .format_LBS {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_LBS > .capsule {
-height: 38mm;
-width: 27mm;
+height: 37mm;
+width: 26mm;
 overflow: hidden;
 }
 .format_LBS > .capsule > .innerBox > p,
@@ -58,8 +58,8 @@ margin-top: 5mm;
 @media print {
 @page {
 size: 27mm 38mm;
-margin-top: 0mm;
-margin-left: 0mm;
+margin-top: 0.5mm;
+margin-left: 0.5mm;
 }
 body {
 margin: 0px;

@@ -2,8 +2,8 @@
   "name": "default_klein",
   "printer": "Pica II RVK",
   "label": {
-    "width": "25mm",
-    "height": "50mm"
+    "width": "24mm",
+    "height": "49mm"
   },
   "pdfName": "default_klein.pdf",
   "paper": {
@@ -63,7 +63,7 @@
       "id": 5,
       "font": "Arial Narrow",
       "fontSize": "16",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "indent": "0"
     },
@@ -71,7 +71,7 @@
       "id": 6,
       "font": "Arial Narrow",
       "fontSize": "16",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "indent": "0"
     },

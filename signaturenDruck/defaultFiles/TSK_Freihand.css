@@ -1,6 +1,6 @@
 #previewBox.format_TSK_Freihand {
-width: 27mm;
-height: 45mm;
+width: 26mm;
+height: 44mm;
 }
 .format_TSK_Freihand {
 text-align: initial;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_TSK_Freihand > .capsule {
-height: 45mm;
-width: 27mm;
+height: 44mm;
+width: 26mm;
 overflow: hidden;
 }
 .format_TSK_Freihand > .capsule > .innerBox > p,
@@ -58,8 +58,8 @@ margin-top: 2mm;
 @media print {
 @page {
 size: 27mm 45mm;
-margin-top: 0mm;
-margin-left: 0mm;
+margin-top: 0.5mm;
+margin-left: 0.5mm;
 }
 body {
 margin: 0px;
