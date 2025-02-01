@@ -77,7 +77,7 @@ class ShelfmarksFromSRUData {
  
        case 'raw':  // FOLIO "Quesnelia"
           if (dataMode === 'PPN') {
-            sig.ppn = xpath.select("translate(string(//bareHoldingsItems[barcode='"+key+"']/hrid),'-','_')", sru)
+            sig.ppn = xpath.select("translate(string(//bareHoldingsItems[barcode='"+key+"']/../permanentLocation/name),'-','_')", sru)
             sig.date = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/../notes[holdingsNoteType/name='Letzte Änderung CBS']/note)", sru)
             sig.txtOneLine = [
                  xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/prefix)", sru),
@@ -86,7 +86,7 @@ class ShelfmarksFromSRUData {
                  xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/chronology)", sru)
                  ].filter(Boolean).join(" ")
             sig.location = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/../permanentLocation/name)", sru)
-            sig.exNr = sig.location
+            sig.exNr = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/hrid)", sru)
             sig.loanIndication = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/status/name)", sru)
           } else {
             sig.error = 'SRU: EPN-Suche für FOLIO raw nicht implementiert'
