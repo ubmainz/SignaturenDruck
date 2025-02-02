@@ -35,17 +35,35 @@
       "id": 2,
       "format": "TSK_Freihand",
       "useRegEx": true,
-      "regEx": "^([^\\s]+)\\s(\\d\\d\\W)([^\\(]*[^\\(\\s])\\s?(.*)$",
+      "regEx": "^([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "TRA-ALLG 12:3-1",
       "result": [
-        "$1",
-        "$2",
+        "$1$2",
         "$3",
-        "$4"
+        "$4",
+        "$5",
+        "$2"
       ],
       "exampleLoc": "BB TSK Freihand",
       "locRegEx": "^BB\\sTSK\\sFreihand$"
+    },
+    {
+      "id": 3,
+      "format": "TSK_Lehrbuchsammlung",
+      "useRegEx": true,
+      "regEx": "^LBS\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "LBS LIN-EN 07:36-5,1 (2.Ex.)",
+      "result": [
+        "LBS",
+        "$1$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "BB TSK Lehrbuchsammlung",
+      "locRegEx": "^BB\\sTSK\\sLehrbuchsammlung$"
     }
   ]
 }
