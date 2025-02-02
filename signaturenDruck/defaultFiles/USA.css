@@ -1,5 +1,5 @@
 #previewBox.format_USA {
-width: 51mm;
+width: 51.8mm;
 height: 19mm;
 }
 .format_USA {
@@ -12,7 +12,7 @@ align-items: center;
 }
 #toPrint.format_USA > .capsule {
 height: 19mm;
-width: 51mm;
+width: 51.8mm;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -24,17 +24,17 @@ margin: 5px 0px 5px 0px;
 }
 .format_USA > .capsule > .innerBox > .line_1,
 .format_USA > .innerBox > .line_1 {
-font-family: "Arial";
+font-family: "Arial Narrow";
 font-size: 16pt;
-font-weight: normal;
+font-weight: bold;
 font-style: normal;
 margin-left: 0%;
 }
 .format_USA > .capsule > .innerBox > .line_2,
 .format_USA > .innerBox > .line_2 {
-font-family: "Arial";
+font-family: "Arial Narrow";
 font-size: 16pt;
-font-weight: normal;
+font-weight: bold;
 font-style: normal;
 margin-left: 0%;
 }
@@ -46,7 +46,7 @@ margin-top: 0mm;
 @page {
 size: 52mm 20mm;
 margin-top: 0.5mm;
-margin-left: 0.5mm;
+margin-left: 0.1mm;
 }
 body {
 margin: 0px;

@@ -2,7 +2,7 @@
   "name": "USA",
   "printer": "Pica II RVK",
   "label": {
-    "width": "51mm",
+    "width": "51.8mm",
     "height": "19mm"
   },
   "pdfName": "USA.pdf",
@@ -24,17 +24,17 @@
   "linesData": [
     {
       "id": 1,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     },
     {
       "id": 2,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     }
