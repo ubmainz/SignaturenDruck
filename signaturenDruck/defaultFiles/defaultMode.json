@@ -3,10 +3,10 @@
   "subModes": [
     {
       "id": 0,
-      "format": "default_gross",
+      "format": "RVK",
       "useRegEx": true,
       "exampleShelfmark": "200 AP 14350 S375",
-      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$",
+      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
       "delimiter": " ",
       "result": [
         "$1",
@@ -22,22 +22,17 @@
     },
     {
       "id": 1,
-      "format": "default_klein",
+      "format": "USA",
       "useRegEx": true,
-      "exampleShelfmark": "200 AP 14350 S681 A111(14) -33+3",
-      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$",
+      "regEx": "^(\\d{3}\\.?\\d*)\\s(.+)$",
       "delimiter": " ",
+      "exampleShelfmark": "973.41092 WAS-2,23",
       "result": [
         "$1",
-        "",
-        "$2",
-        "$3",
-        "$4",
-        "$5",
-        "$6"
+        "$2"
       ],
-      "exampleLoc": "UB",
-      "locRegEx": ""
+      "exampleLoc": "USA-Bibliothek",
+      "locRegEx": "^USA-Bibliothek$"
     },
     {
       "id": 2,
@@ -73,20 +68,6 @@
     },
     {
       "id": 4,
-      "format": "USA",
-      "useRegEx": true,
-      "regEx": "^(\\d{3}\\.?\\d*)\\s(.+)$",
-      "delimiter": " ",
-      "exampleShelfmark": "973.41092 WAS-2,23",
-      "result": [
-        "$1",
-        "$2"
-      ],
-      "exampleLoc": "USA-Bibliothek",
-      "locRegEx": "^USA-Bibliothek$"
-    },
-    {
-      "id": 5,
       "format": "LBS",
       "useRegEx": true,
       "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)\\W?([^\\(\\.]*[^,\\(\\.])?,?(\\b\\d+\\.Aufl\\.|$|\\s)",
@@ -102,7 +83,7 @@
       "locRegEx": "^ZB Lehrbuchsammlung$"
     },
     {
-      "id": 6,
+      "id": 5,
       "format": "ZB_UM_Lesesaal",
       "useRegEx": true,
       "regEx": "^([A-ZÄÖÜ]+)\\s([A-ZÄÖÜ])\\s([0-9/]+)-?(.*)$",
@@ -118,7 +99,7 @@
       "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
     },
     {
-      "id": 7,
+      "id": 6,
       "format": "ZB_Freihand",
       "useRegEx": true,
       "regEx": "^0*(\\d+)\\.(\\d+)\\W?(.*)$",
@@ -133,7 +114,7 @@
       "locRegEx": "^ZB\\sFreihand$"
     },
     {
-      "id": 8,
+      "id": 7,
       "format": "Rara",
       "useRegEx": true,
       "regEx": "^(RARA\\s)?([24]?°?\\s?[A-Za-z]+)\\s(\\d+)\\W?(.*)$",
