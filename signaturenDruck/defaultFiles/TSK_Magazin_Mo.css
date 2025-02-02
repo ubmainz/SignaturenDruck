@@ -1,5 +1,5 @@
 #previewBox.format_TSK_Magazin_Mo {
-width: 26mm;
+width: 23mm;
 height: 44mm;
 }
 .format_TSK_Magazin_Mo {
@@ -8,11 +8,14 @@ white-space: nowrap;
 overflow: hidden;
 }
 .format_TSK_Magazin_Mo {
-align-items: initial;
+align-items: center;
 }
 #toPrint.format_TSK_Magazin_Mo > .capsule {
 height: 44mm;
-width: 26mm;
+width: 23mm;
+display: flex;
+justify-content: center;
+flex-direction: column;
 overflow: hidden;
 }
 .format_TSK_Magazin_Mo > .capsule > .innerBox > p,
@@ -25,7 +28,8 @@ font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
+border-top: 1px solid
 }
 .format_TSK_Magazin_Mo > .capsule > .innerBox > .line_2,
 .format_TSK_Magazin_Mo > .innerBox > .line_2 {
@@ -33,7 +37,7 @@ font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
 }
 .format_TSK_Magazin_Mo > .capsule > .innerBox > .line_3,
 .format_TSK_Magazin_Mo > .innerBox > .line_3 {
@@ -41,17 +45,18 @@ font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
+border-bottom: 1px solid
 }
 .format_TSK_Magazin_Mo > .capsule > .innerBox > .line_1,
 .format_TSK_Magazin_Mo > .innerBox > .line_1 {
-margin-top: 10mm;
+margin-top: 0mm;
 }
 @media print {
 @page {
 size: 27mm 45mm;
 margin-top: 0.5mm;
-margin-left: 0.5mm;
+margin-left: 2mm;
 }
 body {
 margin: 0px;

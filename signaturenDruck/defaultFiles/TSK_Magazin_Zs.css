@@ -1,5 +1,5 @@
 #previewBox.format_TSK_Magazin_Zs {
-width: 26mm;
+width: 23mm;
 height: 44mm;
 }
 .format_TSK_Magazin_Zs {
@@ -12,7 +12,7 @@ align-items: initial;
 }
 #toPrint.format_TSK_Magazin_Zs > .capsule {
 height: 44mm;
-width: 26mm;
+width: 23mm;
 overflow: hidden;
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > p,
@@ -25,7 +25,8 @@ font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
+border-top: 1px solid
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_2,
 .format_TSK_Magazin_Zs > .innerBox > .line_2 {
@@ -33,7 +34,7 @@ font-family: "Arial";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_3,
 .format_TSK_Magazin_Zs > .innerBox > .line_3 {
@@ -41,7 +42,8 @@ font-family: "Arial Narrow";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
-margin-left: 10%;
+margin-left: 0%;
+border-bottom: 1px solid
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_1,
 .format_TSK_Magazin_Zs > .innerBox > .line_1 {
@@ -51,7 +53,7 @@ margin-top: 10mm;
 @page {
 size: 27mm 45mm;
 margin-top: 0.5mm;
-margin-left: 0.5mm;
+margin-left: 2mm;
 }
 body {
 margin: 0px;

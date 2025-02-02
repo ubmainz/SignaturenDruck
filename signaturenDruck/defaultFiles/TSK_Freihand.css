@@ -23,13 +23,13 @@ margin: 5px 0px 5px 0px;
 .format_TSK_Freihand > .innerBox > .line_1 {
 font-family: "Arial Narrow";
 font-size: 16pt;
-font-weight: normal;
+font-weight: bold;
 font-style: normal;
 margin-left: 4%;
 }
 .format_TSK_Freihand > .capsule > .innerBox > .line_2,
 .format_TSK_Freihand > .innerBox > .line_2 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
@@ -37,7 +37,7 @@ margin-left: 4%;
 }
 .format_TSK_Freihand > .capsule > .innerBox > .line_3,
 .format_TSK_Freihand > .innerBox > .line_3 {
-font-family: "Arial Narrow";
+font-family: "Arial";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
@@ -50,6 +50,18 @@ font-size: 16pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 4%;
+}
+.format_TSK_Freihand > .capsule > .innerBox > .line_5,
+.format_TSK_Freihand > .innerBox > .line_5 {
+margin-top: 4mm;
+background-color:black;
+color:white;
+text-align: center;
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
 }
 .format_TSK_Freihand > .capsule > .innerBox > .line_1,
 .format_TSK_Freihand > .innerBox > .line_1 {

@@ -1,44 +1,45 @@
 {
-  "name": "TSK_Freihand",
-  "printer": "Pica II RVK",
+  "name": "TSK_Lehrbuchsammlung",
+  "printer": "Microsoft Print to PDF",
   "label": {
-    "width": "26mm",
-    "height": "44mm"
+    "width": "45mm",
+    "height": "27mm"
   },
-  "pdfName": "TSK_Freihand.pdf",
+  "pdfName": "TSK_Lehrbuchsammlung.pdf",
   "paper": {
-    "width": "27000",
-    "height": "45000"
+    "width": "45000",
+    "height": "27000"
   },
   "lines": "5",
   "example": {
-    "shelfmark": "TRA-ALLG 12:3-1",
+    "shelfmark": "LBS LIN-EN 07:36-5,1 (2.Ex.)",
     "parts": [
-      "TRA-ALLG",
-      "12:",
-      "3-1",
-      ""
+      "LIN-",
+      "EN",
+      "07:",
+      "36-5,1",
+      "(2.Ex.)"
     ]
   },
-  "centerHor": false,
-  "centerVer": false,
+  "centerHor": true,
+  "centerVer": true,
   "lineSpace": "5",
   "linesData": [
     {
       "id": 1,
-      "font": "Arial Narrow",
-      "fontSize": "16",
-      "bold": false,
-      "italic": false,
-      "indent": "4"
-    },
-    {
-      "id": 2,
       "font": "Arial",
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "4"
+      "indent": "0"
+    },
+    {
+      "id": 2,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
     },
     {
       "id": 3,
@@ -46,24 +47,24 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "4"
+      "indent": "0"
     },
     {
       "id": 4,
-      "font": "Arial Narrow",
-      "fontSize": "16",
-      "bold": false,
-      "italic": false,
-      "indent": "4"
-    },
-        {
-      "id": 5,
       "font": "Arial",
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "4"
+      "indent": "0"
+    },
+    {
+      "id": 5,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
     }
   ],
-  "marginTop": "2"
+  "marginTop": "0"
 }

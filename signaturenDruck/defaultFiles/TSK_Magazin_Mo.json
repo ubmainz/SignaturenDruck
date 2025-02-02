@@ -2,7 +2,7 @@
   "name": "TSK_Magazin_Mo",
   "printer": "Pica II RVK",
   "label": {
-    "width": "26mm",
+    "width": "23mm",
     "height": "44mm"
   },
   "pdfName": "TSK_Magazin_Mo.pdf",
@@ -16,11 +16,14 @@
     "parts": [
       "84",
       "001",
+      "041",
+      "84",
+      "001",
       "041"
     ]
   },
   "centerHor": false,
-  "centerVer": false,
+  "centerVer": true,
   "lineSpace": "5",
   "linesData": [
     {
@@ -48,5 +51,5 @@
       "indent": "10"
     }
   ],
-  "marginTop": "10"
+  "marginTop": "0"
 }
