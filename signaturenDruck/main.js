@@ -72,7 +72,7 @@ const configNew = {
     }
   },
   mode: {
-    defaultMode: 'defaultMode'
+    defaultMode: 'TSKModus'
   },
   devMode: false
 }
@@ -370,7 +370,7 @@ function checkConfig () {
     createConfig()
   }
   if (config.get('mode.defaultMode') === 'TSKModus') {
-    createModeFiles('TSKModus', ['RVK', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand'])
+    createModeFiles('TSKModus', ['RVK', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Lesesaal'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
     createModeFiles('defaultMode', ['RVK', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara'])
   }
