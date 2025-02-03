@@ -369,10 +369,10 @@ function checkConfig () {
   } else {
     createConfig()
   }
-  if (config.get('mode.defaultMode') === 'thulbMode') {
-    createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
+  if (config.get('mode.defaultMode') === 'TSKModus') {
+    createModeFiles('TSKModus', ['RVK', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara'])
+    createModeFiles('defaultMode', ['RVK', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara'])
   }
 }
 
