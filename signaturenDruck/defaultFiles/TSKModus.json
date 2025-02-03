@@ -3,6 +3,25 @@
   "subModes": [
     {
       "id": 0,
+      "format": "RVK",
+      "useRegEx": true,
+      "exampleShelfmark": "200 AP 14350 S375",
+      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
+      "delimiter": " ",
+      "result": [
+        "$1",
+        "",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6"
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
+    },
+    {
+      "id": 1,
       "format": "TSK_Magazin_Mo",
       "useRegEx": true,
       "regEx": "^(\\d{2})(\\d{3})(\\d{3})$",
@@ -17,7 +36,7 @@
       "locRegEx": "^BB\\sTSK\\sMagazin$"
     },
     {
-      "id": 1,
+      "id": 2,
       "format": "TSK_Magazin_Zs",
       "useRegEx": true,
       "regEx": "^(Z\\s\\d+)\\s?(.{0,4}[^\\s]{0,4})\\s?(.*)$",
@@ -32,7 +51,7 @@
       "locRegEx": "^BB\\sTSK\\sMagazin$"
     },
     {
-      "id": 2,
+      "id": 3,
       "format": "TSK_Freihand",
       "useRegEx": true,
       "regEx": "^([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
@@ -49,7 +68,7 @@
       "locRegEx": "^BB\\sTSK\\sFreihand$"
     },
     {
-      "id": 3,
+      "id": 4,
       "format": "TSK_Lehrbuchsammlung",
       "useRegEx": true,
       "regEx": "^LBS\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
@@ -64,6 +83,23 @@
       ],
       "exampleLoc": "BB TSK Lehrbuchsammlung",
       "locRegEx": "^BB\\sTSK\\sLehrbuchsammlung$"
+    },
+    {
+      "id": 5,
+      "format": "TSK_Lesesaal",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÖÄÜöäüß]+)\\s(\\d+)/(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "UEDO 240/21",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "Lesesaal"
+      ],
+      "exampleLoc": "BB TSK Lesesaal",
+      "locRegEx": "^BB\\sTSK\\sLesesaal.?$"
     }
   ]
 }

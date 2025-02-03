@@ -1,0 +1,69 @@
+{
+  "name": "TSK_Lesesaal",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "23mm",
+    "height": "44mm"
+  },
+  "pdfName": "TSK_Lesesaal.pdf",
+  "paper": {
+    "width": "27000",
+    "height": "45000"
+  },
+  "lines": "5",
+  "example": {
+    "shelfmark": "UEDO 240/21",
+    "parts": [
+      "UEDO",
+      "240",
+      "21",
+      ""
+    ]
+  },
+  "centerHor": true,
+  "centerVer": false,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 2,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 3,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 4,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
+    },
+        {
+      "id": 5,
+      "font": "Arial",
+      "fontSize": "12",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
+    }
+  ],
+  "marginTop": "0"
+}
