@@ -129,6 +129,41 @@
       ],
       "exampleLoc": "ZB Rara",
       "locRegEx": "^ZB\\sRara$"
+    },
+    {
+      "id": 8,
+      "format": "GFG_Kunstgeschichte",
+      "useRegEx": true,
+      "regEx": "^(K[Aa][Tt]\\sI{1,3}|[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "J k.6/Fid.1-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        ""
+      ],
+      "exampleLoc": "BB GFG Kunstgeschichte",
+      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+    },
+    {
+      "id": 9,
+      "format": "GFG_Kunstgeschichte_Gr",
+      "useRegEx": true,
+      "regEx": "^(#\\sK[Aa][Tt]\\sI{1,3}|#\\s[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "# KAT II M 25/1.19",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "",
+        "Großformat"
+      ],
+      "exampleLoc": "BB GFG Kunstgeschichte",
+      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
     }
   ]
 }
