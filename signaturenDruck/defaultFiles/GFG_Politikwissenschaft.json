@@ -1,0 +1,43 @@
+{
+  "name": "GFG_Politikwissenschaft",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "49mm",
+    "height": "24mm"
+  },
+  "pdfName": "GFG_Politikwissenschaft.pdf",
+  "paper": {
+    "width": "50800",
+    "height": "25400"
+  },
+  "lines": "2",
+  "example": {
+    "shelfmark": "FC-10 33 b",
+    "parts": [
+      "FC-10",
+      "33 b"
+    ]
+  },
+  "centerHor": true,
+  "centerVer": true,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 2,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    }
+  ],
+  "marginTop": "0"
+}

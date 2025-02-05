@@ -1,0 +1,34 @@
+{
+  "name": "Zeile_quer",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "49mm",
+    "height": "24mm"
+  },
+  "pdfName": "Zeile_quer.pdf",
+  "paper": {
+    "width": "50800",
+    "height": "25400"
+  },
+  "lines": "1",
+  "example": {
+    "shelfmark": "HB 13 082, 3",
+    "parts": [
+      "HB 13 082, 3"
+    ]
+  },
+  "centerHor": true,
+  "centerVer": true,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    }
+  ],
+  "marginTop": "0"
+}

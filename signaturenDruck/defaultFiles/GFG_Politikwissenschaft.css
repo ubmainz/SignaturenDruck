@@ -1,0 +1,54 @@
+#previewBox.format_GFG_Politikwissenschaft {
+width: 49mm;
+height: 24mm;
+}
+.format_GFG_Politikwissenschaft {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_GFG_Politikwissenschaft {
+align-items: center;
+}
+#toPrint.format_GFG_Politikwissenschaft > .capsule {
+height: 24mm;
+width: 49mm;
+display: flex;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+}
+.format_GFG_Politikwissenschaft > .capsule > .innerBox > p,
+.format_GFG_Politikwissenschaft > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_GFG_Politikwissenschaft > .capsule > .innerBox > .line_1,
+.format_GFG_Politikwissenschaft > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_GFG_Politikwissenschaft > .capsule > .innerBox > .line_2,
+.format_GFG_Politikwissenschaft > .innerBox > .line_2 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_GFG_Politikwissenschaft > .capsule > .innerBox > .line_1,
+.format_GFG_Politikwissenschaft > .innerBox > .line_1 {
+margin-top: 0mm;
+}
+@media print {
+@page {
+size: 50.8mm 25.4mm;
+margin-top: 0.7mm;
+margin-left: 0.9mm;
+}
+body {
+margin: 0px;
+}
+}

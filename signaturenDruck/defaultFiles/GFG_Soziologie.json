@@ -1,0 +1,61 @@
+{
+  "name": "GFG_Soziologie",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "24mm",
+    "height": "49mm"
+  },
+  "pdfName": "GFG_Soziologie.pdf",
+  "paper": {
+    "width": "25400",
+    "height": "50800"
+  },
+  "lines": "4",
+  "example": {
+    "shelfmark": "31.6 HENZ 1-I, 3. Ex",
+    "parts": [
+      "31.6",
+      "HENZ",
+      "1-I",
+      "3. Ex"
+    ]
+  },
+  "centerHor": false,
+  "centerVer": false,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "5"
+    },
+    {
+      "id": 2,
+      "font": "Arial",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "5"
+    },
+    {
+      "id": 3,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "5"
+    },
+    {
+      "id": 4,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "5"
+    }
+  ],
+  "marginTop": "4"
+}

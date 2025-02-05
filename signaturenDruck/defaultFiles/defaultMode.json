@@ -164,6 +164,49 @@
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
       "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+    },
+    {
+      "id": 10,
+      "format": "Zeile_quer",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1"
+      ],
+      "exampleLoc": "BB GFG Erziehungswissenschaft",
+      "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$|^BB\\sGFG\\sGeo.*$|^BB\\sGFG\\sPublizistik$|^BB\\sGFG\\sPsychologie$"
+    },
+    {
+      "id": 11,
+      "format": "GFG_Politikwissenschaft",
+      "useRegEx": true,
+      "regEx": "^([A-Z].*)\\s(\\d[^\\s]*)\\s?([a-z]*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "FC-10 33 b",
+      "result": [
+        "$1",
+        "$2$3"
+      ],
+      "exampleLoc": "BB GFG Politikwissenschaft",
+      "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
+    },
+    {
+      "id": 12,
+      "format": "GFG_Soziologie",
+      "useRegEx": true,
+      "regEx": "^([\\d\\.]+)[\\s-]([A-Z]+)[\\s-]([0-9IVXLCivxlc,\\s\\/-]*[0-9IVXLCivxlc\\/-])\\W*(\\d+\\.\\s?Ex\\.?)?$",
+      "delimiter": " ",
+      "exampleShelfmark": "31.6 HENZ 1-I, 3. Ex",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "BB GFG Soziologie",
+      "locRegEx": "^BB\\sGFG\\sSoziologie$"
     }
   ]
 }
