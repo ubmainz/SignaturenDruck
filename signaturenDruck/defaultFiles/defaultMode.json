@@ -86,7 +86,7 @@
       "id": 5,
       "format": "ZB_UM_Lesesaal",
       "useRegEx": true,
-      "regEx": "^([A-ZÄÖÜ]+)\\s([A-ZÄÖÜ])\\s([0-9/]+)-?(.*)$",
+      "regEx": "^([A-Za-zÄÖÜäöüß]+)\\s([A-ZÄÖÜ])\\s([0-9/]+)-?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "THEOL C 711-3.F.,9",
       "result": [

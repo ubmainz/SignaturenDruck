@@ -100,21 +100,6 @@
       ],
       "exampleLoc": "BB TSK Lesesaal",
       "locRegEx": "^BB\\sTSK\\sLesesaal.?$"
-    },
-    {
-      "id": 6,
-      "format": "TSK_einfach",
-      "useRegEx": true,
-      "regEx": "^([^\\s]+)\\s?([^\\s]*)\\s?(\\.*)$",
-      "delimiter": " ",
-      "exampleShelfmark": "123 456 78",
-      "result": [
-        "$1",
-        "$2",
-        "$3"
-      ],
-      "exampleLoc": "TSK",
-      "locRegEx": ".*"
     }
   ]
 }
