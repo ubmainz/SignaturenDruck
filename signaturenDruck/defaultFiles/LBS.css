@@ -1,6 +1,6 @@
 #previewBox.format_LBS {
-width: 26mm;
-height: 37mm;
+width: 25mm;
+height: 49mm;
 }
 .format_LBS {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_LBS > .capsule {
-height: 37mm;
-width: 26mm;
+height: 49mm;
+width: 25mm;
 overflow: hidden;
 }
 .format_LBS > .capsule > .innerBox > p,
@@ -45,6 +45,7 @@ margin-left: 0%;
 }
 .format_LBS > .capsule > .innerBox > .line_4,
 .format_LBS > .innerBox > .line_4 {
+margin-top: 3mm;
 font-family: "Arial";
 font-size: 12pt;
 font-weight: normal;
@@ -57,9 +58,9 @@ margin-top: 5mm;
 }
 @media print {
 @page {
-size: 27mm 38mm;
-margin-top: 0.5mm;
-margin-left: 0.5mm;
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
+margin-left: 0.2mm;
 }
 body {
 margin: 0px;

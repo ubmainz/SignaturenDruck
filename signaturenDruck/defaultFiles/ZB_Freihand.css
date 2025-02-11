@@ -1,6 +1,6 @@
 #previewBox.format_ZB_Freihand {
-width: 26mm;
-height: 37mm;
+width: 25mm;
+height: 49mm;
 }
 .format_ZB_Freihand {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_ZB_Freihand > .capsule {
-height: 37mm;
-width: 26mm;
+height: 49mm;
+width: 25mm;
 overflow: hidden;
 }
 .format_ZB_Freihand > .capsule > .innerBox > p,
@@ -49,9 +49,9 @@ margin-top: 5mm;
 }
 @media print {
 @page {
-size: 27mm 38mm;
-margin-top: 0.5mm;
-margin-left: 0.5mm;
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
+margin-left: 0.2mm;
 }
 body {
 margin: 0px;

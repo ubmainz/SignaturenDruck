@@ -2,13 +2,13 @@
   "name": "USA",
   "printer": "Pica II RVK",
   "label": {
-    "width": "51.8mm",
-    "height": "19mm"
+    "width": "50mm",
+    "height": "24mm"
   },
   "pdfName": "USA.pdf",
   "paper": {
-    "width": "52000",
-    "height": "20000"
+    "width": "50800",
+    "height": "25400"
   },
   "lines": "2",
   "example": {

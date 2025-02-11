@@ -2,13 +2,13 @@
   "name": "LBS",
   "printer": "Pica II RVK",
   "label": {
-    "width": "26mm",
-    "height": "37mm"
+    "width": "25mm",
+    "height": "49mm"
   },
   "pdfName": "LBS.pdf",
   "paper": {
-    "width": "27000",
-    "height": "38000"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "4",
   "example": {
