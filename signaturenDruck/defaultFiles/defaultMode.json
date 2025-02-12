@@ -231,9 +231,9 @@
       "id": 14,
       "format": "GFG_Zeile_quer_Geo",
       "useRegEx": true,
-      "regEx": "^(.+)$",
+      "regEx": "^([A-ZÖÄÜ]\\s.+)$",
       "delimiter": " ",
-      "exampleShelfmark": "HB 13 082, 3",
+      "exampleShelfmark": "F 12-81 1.Aufl.",
       "result": [
         "$1",
         "Geo"
@@ -287,6 +287,43 @@
       ],
       "exampleLoc": "BB GFG Sport",
       "locRegEx": "^BB\\sGFG\\sSport$"
+    },
+    {
+      "id": 18,
+      "format": "GFG_Geographie",
+      "useRegEx": true,
+      "regEx": "^(\\d+)\\s*(-\\s*\\d+),?([^,]*),?([^,]*),?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "0125 - 49, 17, 6. Aufl.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "Geo"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo$"
+    },
+    {
+      "id": 19,
+      "format": "GFG_Geowissenschaften",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÖÄÜöäüß]+)\\s([\\d\\.]+)\\s*(-\\s*\\d+),?([^,]*),?([^,]*),?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "PALÄO 32.324 - 34, Pt. U, Vol. 2, 1. Ex.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        "Geo"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo$"
     }
   ]
 }
