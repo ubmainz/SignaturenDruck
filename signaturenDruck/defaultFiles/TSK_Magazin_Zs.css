@@ -1,6 +1,6 @@
 #previewBox.format_TSK_Magazin_Zs {
-width: 23mm;
-height: 44mm;
+width: 22mm;
+height: 49mm;
 }
 .format_TSK_Magazin_Zs {
 text-align: initial;
@@ -8,11 +8,14 @@ white-space: nowrap;
 overflow: hidden;
 }
 .format_TSK_Magazin_Zs {
-align-items: initial;
+align-items: center;
 }
 #toPrint.format_TSK_Magazin_Zs > .capsule {
-height: 44mm;
-width: 23mm;
+height: 49mm;
+width: 22mm;
+display: flex;
+justify-content: center;
+flex-direction: column;
 overflow: hidden;
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > p,
@@ -47,12 +50,12 @@ border-bottom: 1px solid
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_1,
 .format_TSK_Magazin_Zs > .innerBox > .line_1 {
-margin-top: 10mm;
+margin-top: 0mm;
 }
 @media print {
 @page {
-size: 27mm 45mm;
-margin-top: 0.5mm;
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
 margin-left: 2mm;
 }
 body {

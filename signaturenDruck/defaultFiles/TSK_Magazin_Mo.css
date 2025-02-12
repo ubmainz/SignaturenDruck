@@ -1,6 +1,6 @@
 #previewBox.format_TSK_Magazin_Mo {
-width: 23mm;
-height: 44mm;
+width: 22mm;
+height: 49mm;
 }
 .format_TSK_Magazin_Mo {
 text-align: initial;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: center;
 }
 #toPrint.format_TSK_Magazin_Mo > .capsule {
-height: 44mm;
-width: 23mm;
+height: 49mm;
+width: 22mm;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -54,8 +54,8 @@ margin-top: 0mm;
 }
 @media print {
 @page {
-size: 27mm 45mm;
-margin-top: 0.5mm;
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
 margin-left: 2mm;
 }
 body {

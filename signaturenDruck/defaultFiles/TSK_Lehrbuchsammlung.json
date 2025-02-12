@@ -2,13 +2,13 @@
   "name": "TSK_Lehrbuchsammlung",
   "printer": "Microsoft Print to PDF",
   "label": {
-    "width": "45mm",
-    "height": "27mm"
+    "width": "25mm",
+    "height": "49mm"
   },
   "pdfName": "TSK_Lehrbuchsammlung.pdf",
   "paper": {
-    "width": "45000",
-    "height": "27000"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "5",
   "example": {
@@ -66,5 +66,5 @@
       "indent": "0"
     }
   ],
-  "marginTop": "0"
+  "marginTop": "4"
 }

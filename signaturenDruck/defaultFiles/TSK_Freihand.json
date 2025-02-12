@@ -2,13 +2,13 @@
   "name": "TSK_Freihand",
   "printer": "Pica II RVK",
   "label": {
-    "width": "26mm",
-    "height": "44mm"
+    "width": "25mm",
+    "height": "49mm"
   },
   "pdfName": "TSK_Freihand.pdf",
   "paper": {
-    "width": "27000",
-    "height": "45000"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "5",
   "example": {

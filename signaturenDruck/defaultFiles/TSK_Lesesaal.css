@@ -1,6 +1,6 @@
 #previewBox.format_TSK_Lesesaal {
-width: 23mm;
-height: 44mm;
+width: 22mm;
+height: 49mm;
 }
 .format_TSK_Lesesaal {
 text-align: center;
@@ -11,8 +11,8 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_TSK_Lesesaal > .capsule {
-height: 44mm;
-width: 23mm;
+height: 49mm;
+width: 22mm;
 overflow: hidden;
 }
 .format_TSK_Lesesaal > .capsule > .innerBox > p,
@@ -54,7 +54,7 @@ margin-left: 0%;
 }
 .format_TSK_Lesesaal > .capsule > .innerBox > .line_5,
 .format_TSK_Lesesaal > .innerBox > .line_5 {
-margin-top: 4.5mm;
+margin-top: 8mm;
 font-family: "Arial";
 font-size: 12pt;
 font-weight: normal;
@@ -69,8 +69,8 @@ margin-top: 2mm;
 }
 @media print {
 @page {
-size: 27mm 45mm;
-margin-top: 0.5mm;
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
 margin-left: 2mm;
 }
 body {

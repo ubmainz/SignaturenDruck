@@ -2,13 +2,13 @@
   "name": "TSK_Lesesaal",
   "printer": "Pica II RVK",
   "label": {
-    "width": "23mm",
-    "height": "44mm"
+    "width": "22mm",
+    "height": "49mm"
   },
   "pdfName": "TSK_Lesesaal.pdf",
   "paper": {
-    "width": "27000",
-    "height": "45000"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "5",
   "example": {

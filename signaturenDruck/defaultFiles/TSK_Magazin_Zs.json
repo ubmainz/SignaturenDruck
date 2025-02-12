@@ -3,12 +3,12 @@
   "printer": "Pica II RVK",
   "label": {
     "width": "23mm",
-    "height": "44mm"
+    "height": "49mm"
   },
   "pdfName": "TSK_Magazin_Zs.pdf",
   "paper": {
-    "width": "27000",
-    "height": "45000"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "3",
   "example": {
@@ -20,7 +20,7 @@
     ]
   },
   "centerHor": false,
-  "centerVer": false,
+  "centerVer": true,
   "lineSpace": "5",
   "linesData": [
     {
