@@ -72,7 +72,7 @@ const configNew = {
     }
   },
   mode: {
-    defaultMode: 'TSKModus'
+    defaultMode: 'defaultMode'
   },
   devMode: false
 }
@@ -372,7 +372,9 @@ function checkConfig () {
   if (config.get('mode.defaultMode') === 'TSKModus') {
     createModeFiles('TSKModus', ['RVK', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Lesesaal'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['RVK', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara'])
+    createModeFiles('defaultMode', ['RVK', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','Rara',
+    'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
+    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub'])
   }
 }
 
