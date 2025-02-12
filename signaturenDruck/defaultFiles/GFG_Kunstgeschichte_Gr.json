@@ -3,14 +3,14 @@
   "printer": "Pica II RVK",
   "label": {
     "width": "24mm",
-    "height": "49mm"
+    "height": "50mm"
   },
   "pdfName": "GFG_Kunstgeschichte_Gr.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
-  "lines": "6",
+  "lines": "7",
   "example": {
     "shelfmark": "# KAT II M 25/1.19",
     "parts": [
@@ -19,12 +19,13 @@
       "25",
       "1.19",
       "",
-      "Großformat"
+      "Großformat",
+      "Kun"
     ]
   },
   "centerHor": true,
   "centerVer": false,
-  "lineSpace": "5",
+  "lineSpace": "4",
   "linesData": [
     {
       "id": 1,
@@ -73,7 +74,15 @@
       "bold": true,
       "italic": false,
       "indent": "0"
+    },
+    {
+      "id": 7,
+      "font": "Arial",
+      "fontSize": "12",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
     }
   ],
-  "marginTop": "2"
+  "marginTop": "1"
 }

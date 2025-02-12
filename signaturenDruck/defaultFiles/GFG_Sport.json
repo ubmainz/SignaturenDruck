@@ -1,30 +1,30 @@
 {
-  "name": "GFG_Kunstgeschichte",
+  "name": "GFG_Sport",
   "printer": "Pica II RVK",
   "label": {
-    "width": "24mm",
-    "height": "50mm"
+    "width": "25mm",
+    "height": "49mm"
   },
-  "pdfName": "GFG_Kunstgeschichte.pdf",
+  "pdfName": "GFG_Sport.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
   "lines": "6",
   "example": {
-    "shelfmark": "J k.6/Fid.1-1",
+    "shelfmark": "G 2,5,2.167/Ausg.2007",
     "parts": [
-      "J",
-      "k.6",
-      "Fid.1-1",
-      "",
-      "",
-      "Kun"
+      "G",
+      "2,5,2.",
+      "167",
+      "Ausg.",
+      "2007",
+      "Spo"
     ]
   },
-  "centerHor": true,
+  "centerHor": false,
   "centerVer": false,
-  "lineSpace": "4",
+  "lineSpace": "5",
   "linesData": [
     {
       "id": 1,
@@ -36,7 +36,7 @@
     },
     {
       "id": 2,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
       "bold": true,
       "italic": false,
@@ -75,5 +75,5 @@
       "indent": "0"
     }
   ],
-  "marginTop": "1"
+  "marginTop": "2"
 }

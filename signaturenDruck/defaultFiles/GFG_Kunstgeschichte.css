@@ -1,6 +1,6 @@
 #previewBox.format_GFG_Kunstgeschichte {
 width: 24mm;
-height: 49mm;
+height: 50mm;
 }
 .format_GFG_Kunstgeschichte {
 text-align: center;
@@ -11,13 +11,13 @@ overflow: hidden;
 align-items: initial;
 }
 #toPrint.format_GFG_Kunstgeschichte > .capsule {
-height: 49mm;
+height: 50mm;
 width: 24mm;
 overflow: hidden;
 }
 .format_GFG_Kunstgeschichte > .capsule > .innerBox > p,
 .format_GFG_Kunstgeschichte > .innerBox > p {
-margin: 5px 0px 5px 0px;
+margin: 4px 0px 4px 0px;
 }
 .format_GFG_Kunstgeschichte > .capsule > .innerBox > .line_1,
 .format_GFG_Kunstgeschichte > .innerBox > .line_1 {
@@ -59,14 +59,24 @@ font-weight: normal;
 font-style: normal;
 margin-left: 0%;
 }
+.format_GFG_Kunstgeschichte > .capsule > .innerBox > .line_6,
+.format_GFG_Kunstgeschichte > .innerBox > .line_6 {
+margin-top: 7mm;
+border-top: 1px solid;
+font-family: "Arial";
+font-size: 12pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
 .format_GFG_Kunstgeschichte > .capsule > .innerBox > .line_1,
 .format_GFG_Kunstgeschichte > .innerBox > .line_1 {
-margin-top: 2mm;
+margin-top: 1mm;
 }
 @media print {
 @page {
 size: 25.4mm 50.8mm;
-margin-top: 0.9mm;
+margin-top: 0.4mm;
 margin-left: 0.7mm;
 }
 body {

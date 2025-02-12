@@ -38,9 +38,19 @@ font-weight: bold;
 font-style: normal;
 margin-left: 0%;
 }
+.format_GFG_Politikwissenschaft > .capsule > .innerBox > .line_3,
+.format_GFG_Politikwissenschaft > .innerBox > .line_3 {
+margin-top: 1mm;
+border-top: 1px solid;
+font-family: "Arial";
+font-size: 12pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
 .format_GFG_Politikwissenschaft > .capsule > .innerBox > .line_1,
 .format_GFG_Politikwissenschaft > .innerBox > .line_1 {
-margin-top: 0mm;
+margin-top: 4mm;
 }
 @media print {
 @page {

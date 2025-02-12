@@ -1,22 +1,22 @@
 {
-  "name": "GFG_Politikwissenschaft",
+  "name": "GFG_Film",
   "printer": "Pica II RVK",
   "label": {
     "width": "49mm",
     "height": "24mm"
   },
-  "pdfName": "GFG_Politikwissenschaft.pdf",
+  "pdfName": "GFG_Film.pdf",
   "paper": {
     "width": "50800",
     "height": "25400"
   },
   "lines": "3",
   "example": {
-    "shelfmark": "FC-10 33 b",
+    "shelfmark": "G 08 Special 7-TX/DVD",
     "parts": [
-      "FC-10",
-      "33 b",
-      "Pol"
+      "G 08",
+      "Special 7",
+      "TX/DVD"
     ]
   },
   "centerHor": true,
@@ -33,7 +33,7 @@
     },
     {
       "id": 2,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
       "bold": true,
       "italic": false,
@@ -41,12 +41,12 @@
     },
     {
       "id": 3,
-      "font": "Arial",
-      "fontSize": "12",
-      "bold": true,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
       "italic": false,
       "indent": "0"
     }
   ],
-  "marginTop": "4"
+  "marginTop": "2"
 }

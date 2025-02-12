@@ -1,0 +1,62 @@
+#previewBox.format_GFG_Film {
+width: 49mm;
+height: 24mm;
+}
+.format_GFG_Film {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_GFG_Film {
+align-items: center;
+}
+#toPrint.format_GFG_Film > .capsule {
+height: 24mm;
+width: 49mm;
+display: flex;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+}
+.format_GFG_Film > .capsule > .innerBox > p,
+.format_GFG_Film > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_GFG_Film > .capsule > .innerBox > .line_1,
+.format_GFG_Film > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_GFG_Film > .capsule > .innerBox > .line_2,
+.format_GFG_Film > .innerBox > .line_2 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_GFG_Film > .capsule > .innerBox > .line_3,
+.format_GFG_Film > .innerBox > .line_3 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_GFG_Film > .capsule > .innerBox > .line_1,
+.format_GFG_Film > .innerBox > .line_1 {
+margin-top: 2mm;
+}
+@media print {
+@page {
+size: 50.8mm 25.4mm;
+margin-top: 0.7mm;
+margin-left: 0.9mm;
+}
+body {
+margin: 0px;
+}
+}

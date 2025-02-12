@@ -142,7 +142,8 @@
         "$2",
         "$3",
         "$4",
-        ""
+        "",
+        "Kun"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
       "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
@@ -160,40 +161,14 @@
         "$3",
         "$4",
         "",
-        "Großformat"
+        "Großformat",
+        "Kun"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
       "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
     },
     {
       "id": 10,
-      "format": "Zeile_quer",
-      "useRegEx": true,
-      "regEx": "^(.+)$",
-      "delimiter": " ",
-      "exampleShelfmark": "HB 13 082, 3",
-      "result": [
-        "$1"
-      ],
-      "exampleLoc": "BB GFG Erziehungswissenschaft",
-      "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$|^BB\\sGFG\\sGeo.*$|^BB\\sGFG\\sPublizistik$|^BB\\sGFG\\sPsychologie$"
-    },
-    {
-      "id": 11,
-      "format": "GFG_Politikwissenschaft",
-      "useRegEx": true,
-      "regEx": "^([A-Z].*)\\s(\\d[^\\s]*)\\s?([a-z]*)$",
-      "delimiter": " ",
-      "exampleShelfmark": "FC-10 33 b",
-      "result": [
-        "$1",
-        "$2$3"
-      ],
-      "exampleLoc": "BB GFG Politikwissenschaft",
-      "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
-    },
-    {
-      "id": 12,
       "format": "GFG_Soziologie",
       "useRegEx": true,
       "regEx": "^([\\d\\.]+)[\\s-]([A-Z]+)[\\s-]([0-9IVXLCivxlc,\\s\\/-]*[0-9IVXLCivxlc\\/-])\\W*(\\d+\\.\\s?Ex\\.?)?$",
@@ -208,6 +183,110 @@
       ],
       "exampleLoc": "BB GFG Soziologie",
       "locRegEx": "^BB\\sGFG\\sSoziologie$"
+    },
+    {
+      "id": 11,
+      "format": "GFG_Politikwissenschaft",
+      "useRegEx": true,
+      "regEx": "^([A-Z].*)\\s(\\d[^\\s]*)\\s?([a-z]*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "FC-10 33 b",
+      "result": [
+        "$1",
+        "$2$3",
+        "Pol"
+      ],
+      "exampleLoc": "BB GFG Politikwissenschaft",
+      "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
+    },
+    {
+      "id": 12,
+      "format": "GFG_Zeile_quer_Psy",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "Psy"
+      ],
+      "exampleLoc": "BB GFG Psychologie",
+      "locRegEx": "^BB\\sGFG\\sPsychologie$"
+    },
+    {
+      "id": 13,
+      "format": "GFG_Zeile_quer_Erz",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "Erz"
+      ],
+      "exampleLoc": "BB GFG Erziehungswissenschaft",
+      "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$"
+    },
+    {
+      "id": 14,
+      "format": "GFG_Zeile_quer_Geo",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "Geo"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo.*$"
+    },
+    {
+      "id": 15,
+      "format": "GFG_Zeile_quer_Pub",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "Pub"
+      ],
+      "exampleLoc": "BB GFG Publizistik",
+      "locRegEx": "^BB\\sGFG\\sPublizistik$"
+    },
+    {
+      "id": 16,
+      "format": "GFG_Film",
+      "useRegEx": true,
+      "regEx": "^([A-ZÖÄÜ]+\\s?\\d*)\\s([A-Za-zÄÖÜäöüß\\s]+[0-9\\.-][0-9\\.]*)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "G 08 Special 7-TX/DVD",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "BB GFG Filmwissenschaft",
+      "locRegEx": "^BB\\sGFG\\sFilmwissenschaft$"
+    },
+    {
+      "id": 17,
+      "format": "GFG_Sport",
+      "useRegEx": true,
+      "regEx": "^([A-ZÖÄÜ])\\s([0-9\\,]+\\.)([0-9a-z\\/\\+-]*$|[0-9a-z\\/\\+-]*[\\/,])([^\\/,]{0,8}[\\.])?([^\\/,\\.]*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "G 2,5,2.167/Ausg.2007",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "Spo"
+      ],
+      "exampleLoc": "BB GFG Sport",
+      "locRegEx": "^BB\\sGFG\\sSport$"
     }
   ]
 }
