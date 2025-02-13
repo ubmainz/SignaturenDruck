@@ -143,7 +143,7 @@
         "$3",
         "$4",
         "",
-        "Kun"
+        "KG"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
       "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
@@ -162,7 +162,7 @@
         "$4",
         "",
         "Großformat",
-        "Kun"
+        "KG"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
       "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
@@ -179,7 +179,7 @@
         "$2",
         "$3",
         "$4",
-        "Soz"
+        "SOZ"
       ],
       "exampleLoc": "BB GFG Soziologie",
       "locRegEx": "^BB\\sGFG\\sSoziologie$"
@@ -194,7 +194,7 @@
       "result": [
         "$1",
         "$2$3",
-        "Pol"
+        "POL"
       ],
       "exampleLoc": "BB GFG Politikwissenschaft",
       "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
@@ -208,7 +208,7 @@
       "exampleShelfmark": "HB 13 082, 3",
       "result": [
         "$1",
-        "Psy"
+        "PSYCH"
       ],
       "exampleLoc": "BB GFG Psychologie",
       "locRegEx": "^BB\\sGFG\\sPsychologie$"
@@ -222,7 +222,7 @@
       "exampleShelfmark": "HB 13 082, 3",
       "result": [
         "$1",
-        "Erz"
+        "PAED"
       ],
       "exampleLoc": "BB GFG Erziehungswissenschaft",
       "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$"
@@ -236,7 +236,7 @@
       "exampleShelfmark": "F 12-81 1.Aufl.",
       "result": [
         "$1",
-        "Geo"
+        "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
       "locRegEx": "^BB\\sGFG\\sGeo.*$"
@@ -250,7 +250,7 @@
       "exampleShelfmark": "HB 13 082, 3",
       "result": [
         "$1",
-        "Pub"
+        "PUB"
       ],
       "exampleLoc": "BB GFG Publizistik",
       "locRegEx": "^BB\\sGFG\\sPublizistik$"
@@ -265,7 +265,8 @@
       "result": [
         "$1",
         "$2",
-        "$3"
+        "$3",
+        "FILM"
       ],
       "exampleLoc": "BB GFG Filmwissenschaft",
       "locRegEx": "^BB\\sGFG\\sFilmwissenschaft$"
@@ -274,7 +275,7 @@
       "id": 17,
       "format": "GFG_Sport",
       "useRegEx": true,
-      "regEx": "^([A-ZÖÄÜ])\\s([0-9\\,]+\\.)([0-9a-z\\/\\+-]*$|[0-9a-z\\/\\+-]*[\\/,])([^\\/,]{0,8}[\\.])?([^\\/,\\.]*)$",
+      "regEx": "^([A-ZÖÄÜ])\\s([0-9\\,]+\\.)([0-9a-z\\/\\+-]*$|[0-9a-z\\/\\+-]*[\\/,])([^\\/,]{0,8}[\\.])?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "G 2,5,2.167/Ausg.2007",
       "result": [
@@ -283,7 +284,7 @@
         "$3",
         "$4",
         "$5",
-        "Spo"
+        "SPORT"
       ],
       "exampleLoc": "BB GFG Sport",
       "locRegEx": "^BB\\sGFG\\sSport$"
@@ -301,7 +302,7 @@
         "$3",
         "$4",
         "$5",
-        "Geo"
+        "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
       "locRegEx": "^BB\\sGFG\\sGeo$"
@@ -320,10 +321,29 @@
         "$4",
         "$5",
         "$6",
-        "Geo"
+        "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
       "locRegEx": "^BB\\sGFG\\sGeo$"
+    },
+    {
+      "id": 20,
+      "format": "Kunsthochschule",
+      "useRegEx": true,
+      "regEx": "^([\\w\\.-]+)[^\\w\\.]+([\\w\\.-]+)[^\\w\\.]*([\\w\\.-]*)[^\\w\\.]*([\\w\\.-]*)[^\\w\\.]*([\\w\\.-]*)[^\\w\\.]*(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "KTH - POL 15",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        "KH"
+      ],
+      "exampleLoc": "Kunsthochschule",
+      "locRegEx": "^Kunsthochschule$"
     }
   ]
 }
