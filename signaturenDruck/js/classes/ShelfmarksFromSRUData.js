@@ -77,20 +77,21 @@ class ShelfmarksFromSRUData {
  
        case 'raw':  // FOLIO "Quesnelia"
           if (dataMode === 'PPN') {
-            sig.ppn = xpath.select("translate(string(//bareHoldingsItems[barcode='"+key+"']/../permanentLocation/name),'-','_')", sru)
-            sig.date = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/../notes[holdingsNoteType/name='Letzte Änderung CBS']/note)", sru)
-            sig.txtOneLine = [
-                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/prefix)", sru),
-                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/callNumber)", sru),
-                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/effectiveCallNumberComponents/suffix)", sru),
-                 xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/chronology)", sru)
-                 ].filter(Boolean).join(" ")
-            sig.location = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/../permanentLocation/name)", sru)
-            sig.exNr = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/hrid)", sru)
-            sig.loanIndication = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/status/name)", sru)
+            var hrid = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/hrid)", sru)
           } else {
-            sig.error = 'SRU: EPN-Suche für FOLIO raw nicht implementiert'
+            var hrid = key
           }
+          sig.ppn = xpath.select("translate(string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name),'-','_')", sru)
+          sig.date = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../notes[holdingsNoteType/name='Letzte Änderung CBS']/note)", sru)
+          sig.txtOneLine = [
+             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/prefix)", sru),
+             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/callNumber)", sru),
+             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/suffix)", sru),
+             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/chronology)", sru)
+             ].filter(Boolean).join(" ")
+          sig.location = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name)", sru)
+          sig.exNr = hrid
+          sig.loanIndication = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/status/name)", sru)
           break
 
        default:
