@@ -1,6 +1,6 @@
 {
   "name": "TSK_Lehrbuchsammlung",
-  "printer": "Microsoft Print to PDF",
+  "printer": "Pica II RVK",
   "label": {
     "width": "25mm",
     "height": "49mm"

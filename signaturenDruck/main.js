@@ -55,7 +55,7 @@ const configNew = {
     printImmediately: false,
     SRUAddress: 'https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz',
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
-    QueryPart1EPN: '',
+    QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=holdings.hrid==',
     QueryPart2: '&maximumRecords=1&recordSchema=raw'
   },
   print: {
