@@ -340,7 +340,7 @@
         "$4",
         "$5",
         "$6",
-        "KH"
+        "KHS"
       ],
       "exampleLoc": "Kunsthochschule",
       "locRegEx": "^Kunsthochschule$"

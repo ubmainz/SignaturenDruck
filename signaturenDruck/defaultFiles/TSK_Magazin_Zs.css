@@ -24,16 +24,16 @@ margin: 5px 0px 5px 0px;
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_1,
 .format_TSK_Magazin_Zs > .innerBox > .line_1 {
-font-family: "Arial";
-font-size: 16pt;
+font-family: "Arial Narrow";
+font-size: 24pt;
 font-weight: bold;
 font-style: normal;
 margin-left: 0%;
-border-top: 1px solid
+border-top: 2px solid
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_2,
 .format_TSK_Magazin_Zs > .innerBox > .line_2 {
-font-family: "Arial";
+font-family: "Arial Narrow";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
@@ -46,7 +46,15 @@ font-size: 16pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 0%;
-border-bottom: 1px solid
+}
+.format_TSK_Magazin_Zs > .capsule > .innerBox > .line_4,
+.format_TSK_Magazin_Zs > .innerBox > .line_4 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+border-bottom: 2px solid
 }
 .format_TSK_Magazin_Zs > .capsule > .innerBox > .line_1,
 .format_TSK_Magazin_Zs > .innerBox > .line_1 {

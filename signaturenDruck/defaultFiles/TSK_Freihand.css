@@ -65,7 +65,7 @@ margin-left: 0%;
 }
 .format_TSK_Freihand > .capsule > .innerBox > .line_1,
 .format_TSK_Freihand > .innerBox > .line_1 {
-margin-top: 2mm;
+margin-top: 6mm;
 }
 @media print {
 @page {

@@ -10,13 +10,13 @@
     "width": "25400",
     "height": "50800"
   },
-  "lines": "3",
+  "lines": "4",
   "example": {
     "shelfmark": "Z 796 1995 23,3",
     "parts": [
       "Z 796",
-      "1995 23,3",
-      ""
+      "1995",
+      "23,3"
     ]
   },
   "centerHor": false,
@@ -25,15 +25,15 @@
   "linesData": [
     {
       "id": 1,
-      "font": "Arial",
-      "fontSize": "16",
+      "font": "Arial Narrow",
+      "fontSize": "24",
       "bold": true,
       "italic": false,
       "indent": "10"
     },
     {
       "id": 2,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
       "bold": false,
       "italic": false,
@@ -41,6 +41,14 @@
      },
     {
       "id": 3,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "10"
+    },
+    {
+      "id": 4,
       "font": "Arial Narrow",
       "fontSize": "16",
       "bold": false,

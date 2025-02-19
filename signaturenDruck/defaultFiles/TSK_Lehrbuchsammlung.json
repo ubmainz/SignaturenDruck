@@ -23,12 +23,12 @@
   },
   "centerHor": true,
   "centerVer": true,
-  "lineSpace": "5",
+  "lineSpace": "4",
   "linesData": [
     {
       "id": 1,
       "font": "Arial",
-      "fontSize": "16",
+      "fontSize": "12",
       "bold": false,
       "italic": false,
       "indent": "0"
@@ -66,5 +66,5 @@
       "indent": "0"
     }
   ],
-  "marginTop": "4"
+  "marginTop": "0"
 }

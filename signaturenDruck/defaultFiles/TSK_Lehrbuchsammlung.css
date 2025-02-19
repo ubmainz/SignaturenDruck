@@ -17,12 +17,12 @@ overflow: hidden;
 }
 .format_TSK_Lehrbuchsammlung > .capsule > .innerBox > p,
 .format_TSK_Lehrbuchsammlung > .innerBox > p {
-margin: 5px 0px 5px 0px;
+margin: 4px 0px 4px 0px;
 }
 .format_TSK_Lehrbuchsammlung > .capsule > .innerBox > .line_1,
 .format_TSK_Lehrbuchsammlung > .innerBox > .line_1 {
-font-family: "Arial Narrow";
-font-size: 16pt;
+font-family: "Arial";
+font-size: 12pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 4%;
@@ -61,7 +61,7 @@ border-bottom: 1px solid
 }
 .format_TSK_Lehrbuchsammlung > .capsule > .innerBox > .line_1,
 .format_TSK_Lehrbuchsammlung > .innerBox > .line_1 {
-margin-top: 4mm;
+margin-top: 0mm;
 }
 @media print {
 @page {

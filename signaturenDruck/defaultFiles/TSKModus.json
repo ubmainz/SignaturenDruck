@@ -45,7 +45,8 @@
       "result": [
         "$1",
         "$2",
-        "$3"
+        "$3",
+        ""
       ],
       "exampleLoc": "BB TSK Magazin",
       "locRegEx": "^BB\\sTSK\\sMagazin$"
