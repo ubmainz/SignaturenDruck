@@ -97,7 +97,7 @@
         "$2",
         "$3",
         "$4",
-        "Lesesaal"
+        "LESESAAL"
       ],
       "exampleLoc": "BB TSK Lesesaal",
       "locRegEx": "^BB\\sTSK\\sLesesaal.?$"

@@ -45,7 +45,7 @@
       "id": 3,
       "font": "Arial",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     },
@@ -53,7 +53,7 @@
       "id": 4,
       "font": "Arial",
       "fontSize": "16",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "indent": "0"
     },
