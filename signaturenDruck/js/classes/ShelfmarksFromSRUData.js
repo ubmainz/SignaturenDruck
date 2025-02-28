@@ -88,11 +88,13 @@ class ShelfmarksFromSRUData {
           }
           sig.ppn = xpath.select("translate(string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name),'-','_')", sru)
           sig.date = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../notes[holdingsNoteType/name='Letzte Änderung CBS']/note)", sru)
+          var copyno = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/copyNumber)", sru)
           sig.txtOneLine = [
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/prefix)", sru),
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/callNumber)", sru),
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/suffix)", sru),
-             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/chronology)", sru)
+             xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/chronology)", sru),
+             copyno ? '('+copyno+'.Ex.)' : ''
              ].filter(Boolean).join(" ")
           sig.location = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name)", sru)
           sig.exNr = hrid
