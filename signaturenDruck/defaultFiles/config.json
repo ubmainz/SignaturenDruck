@@ -1,0 +1,56 @@
+{
+	"defaultDownloadPath": "C:/Export/download.dnl",
+	"sortByPPN": false,
+	"useK10plus": true,
+	"hideDeleteBtn": false,
+	"showMenu": false,
+	"filterByLoc": true,
+	"example": {
+		"shelfmark": "200 AP 14350 S377",
+		"location": "UB",
+		"regex": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$",
+		"delimiter": " "
+	},
+	"modal": {
+		"showModal": true,
+		"modalTxt": "Die ausgewählten Signaturen wurden gedruckt."
+	},
+	"SRU": {
+		"useSRU": true,
+		"printImmediately": false,
+		"SRUAddress": "https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz",
+		"QueryPart1": "?version=1.1&operation=searchRetrieve&query=item.barcode==",
+		"QueryPart1EPN": "?version=1.1&operation=searchRetrieve&query=holdings.hrid==",
+		"QueryPart2": "&maximumRecords=1&recordSchema=raw"
+	},
+	"print": {
+		"printCoverLabel": false,
+		"reverseOrder": false,
+		"showPrintDialog": false,
+		"orientation": "portrait",
+		"scale": "noscale",
+		"margin": {
+			"top": 0,
+			"bottom": 0,
+			"left": 0,
+			"right": 0
+		},
+		"printerList": [
+			"OneNote (Desktop)",
+			"Pica II RVK",
+			"NPI514C48 (HP LaserJet 100 colorMFP M175nw)",
+			"Microsoft XPS Document Writer",
+			"Microsoft Print to PDF",
+			"HP LaserJet 100 color MFP M175 PCL6",
+			"Fax"
+		]
+	},
+	"mode": {
+		"defaultMode": "defaultMode"
+	},
+	"devMode": false,
+	"username": "Marko",
+	"defaultProgramPath": "C:\\Users\\Marko\\SignaturenDruck",
+	"sigJSONFile": "C:\\Users\\Marko\\SignaturenDruck\\signaturen.json",
+	"configVersion": 1.1
+}
