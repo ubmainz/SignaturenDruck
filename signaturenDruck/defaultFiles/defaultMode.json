@@ -102,7 +102,7 @@
       "id": 6,
       "format": "ZB_Freihand",
       "useRegEx": true,
-      "regEx": "^0*(\\d+)\\.(\\d+)\\W?(.*)$",
+      "regEx": "^(\\d+)\\.(\\d+)\\W?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "043.169-1",
       "result": [
