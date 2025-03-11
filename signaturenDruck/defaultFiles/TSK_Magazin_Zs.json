@@ -10,26 +10,35 @@
     "width": "25400",
     "height": "50800"
   },
-  "lines": "4",
+  "lines": "5",
   "example": {
     "shelfmark": "Z 796 1995 23,3",
     "parts": [
-      "Z 796",
+      "Z",
+      "796",
       "1995",
       "23,3"
     ]
   },
-  "centerHor": false,
-  "centerVer": true,
+  "centerHor": true,
+  "centerVer": false,
   "lineSpace": "5",
   "linesData": [
     {
       "id": 1,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "24",
       "bold": true,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
+    },
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "24",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
     },
     {
       "id": 2,
@@ -37,7 +46,7 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
      },
     {
       "id": 3,
@@ -45,7 +54,7 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
     },
     {
       "id": 4,
@@ -53,8 +62,8 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
     }
   ],
-  "marginTop": "10"
+  "marginTop": "0"
 }

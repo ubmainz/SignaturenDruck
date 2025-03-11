@@ -26,26 +26,26 @@
     {
       "id": 1,
       "font": "Arial",
-      "fontSize": "24",
+      "fontSize": "32",
       "bold": true,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
     },
     {
       "id": 2,
       "font": "Arial",
-      "fontSize": "24",
+      "fontSize": "32",
       "bold": true,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
     },
     {
       "id": 3,
       "font": "Arial",
-      "fontSize": "24",
+      "fontSize": "32",
       "bold": true,
       "italic": false,
-      "indent": "10"
+      "indent": "0"
     }
   ],
   "marginTop": "0"

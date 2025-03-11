@@ -6,7 +6,7 @@
       "format": "RVK",
       "useRegEx": true,
       "exampleShelfmark": "200 AP 14350 S375",
-      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
+      "regEx": "^(\\d{3})\\s([A-Z]{2})\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
       "delimiter": " ",
       "result": [
         "$1",
@@ -39,13 +39,14 @@
       "id": 2,
       "format": "TSK_Magazin_Zs",
       "useRegEx": true,
-      "regEx": "^(Z\\s\\d+)\\s?(.{0,4}[^\\s]{0,4})\\s?(.*)$",
+      "regEx": "^(Z)\\s(\\d+)\\s?(.{0,4}[^\\s]{0,4})\\s?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "Z 796 1995 23,3",
       "result": [
         "$1",
         "$2",
         "$3",
+        "$4",
         ""
       ],
       "exampleLoc": "BB TSK Magazin",

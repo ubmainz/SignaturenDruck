@@ -6,7 +6,7 @@
       "format": "RVK",
       "useRegEx": true,
       "exampleShelfmark": "200 AP 14350 S375",
-      "regEx": "^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
+      "regEx": "^(\\d{3})\\s([A-Z]{2})\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
       "delimiter": " ",
       "result": [
         "$1",
