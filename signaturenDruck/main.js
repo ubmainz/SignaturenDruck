@@ -72,7 +72,7 @@ const configNew = {
     }
   },
   mode: {
-    defaultMode: 'TSKModus'
+    defaultMode: 'defaultMode'
   },
   devMode: false
 }
