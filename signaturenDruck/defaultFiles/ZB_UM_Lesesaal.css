@@ -46,7 +46,15 @@ margin-left: 0%;
 .format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_4,
 .format_ZB_UM_Lesesaal > .innerBox > .line_4 {
 font-family: "Arial Narrow";
-font-size: 16pt;
+font-size: 12pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal > .capsule > .innerBox > .line_5,
+.format_ZB_UM_Lesesaal > .innerBox > .line_5 {
+font-family: "Arial Narrow";
+font-size: 12pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 0%;

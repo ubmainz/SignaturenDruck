@@ -57,7 +57,7 @@
       "id": 3,
       "format": "ZB_Magazin",
       "useRegEx": true,
-      "regEx": "^([24]?°?\\s?[A-Za-z]+)\\s(.{0,4}[^\\s]{0,4})\\s?(.*)$",
+      "regEx": "^([24]?°?\\s?[A-Za-z]+)\\s(.[\\w/,\\.]{0,7})[^\\w/,\\.]?(.[\\w/,\\.]{0,7})?[^\\w/,\\.]?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "4° BE 9775-110",
       "result": [
@@ -105,14 +105,15 @@
       "id": 6,
       "format": "ZB_UM_Lesesaal",
       "useRegEx": true,
-      "regEx": "^([A-Za-zÄÖÜäöüß]+)\\s([A-ZÄÖÜ])\\s([0-9/]+)-?(.*)$",
+      "regEx": "^([A-ZÄÖÜ]\\w*)\\s(\\w+)\\s?([\\w/]+)?-?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "THEOL C 711-3.F.,9",
       "result": [
         "$1",
         "$2",
         "$3",
-        "$4"
+        "$4",
+        ""
       ],
       "exampleLoc": "ZB Lesesaal",
       "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
