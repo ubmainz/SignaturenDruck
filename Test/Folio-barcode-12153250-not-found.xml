@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.1</zs:version><zs:numberOfRecords>1</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema>raw</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><opt>
+  <id>d7bec709-5821-4c17-9493-f5e86568e8b9</id>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>433da98f-28ba-4c9e-8f5c-3dcbca0c174c</id>
+      <accessionNumber/>
+      <barcode>12158892</barcode>
+      <chronology>2004,02,10</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002889</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>696128e4-bac3-4ddc-9942-801b61b311e1</id>
+      <accessionNumber/>
+      <barcode>18394576</barcode>
+      <chronology>2019,06,01</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002878</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>5ff51453-eac6-4d0b-bbcc-f5cc3a95697d</id>
+      <accessionNumber/>
+      <barcode>18389430</barcode>
+      <chronology>2019,10,01</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002879</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>fbd728df-0768-40a5-b8c1-aee4a6b13e4b</id>
+      <accessionNumber/>
+      <barcode>18595752</barcode>
+      <chronology>2020,01,02</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002880</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>a6128182-f3ab-437e-87db-60ab4dcf6ab7</id>
+      <accessionNumber/>
+      <barcode>18595790</barcode>
+      <chronology>2020,05,02</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002881</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>e8d3007c-860c-418c-8582-786ca1eecd46</id>
+      <accessionNumber/>
+      <barcode>18692290</barcode>
+      <chronology>2021,05,03</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002882</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>76f0de7f-7a33-4285-82e4-5113d1c33145</id>
+      <accessionNumber/>
+      <barcode>12153523</barcode>
+      <chronology>2005,10,25</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002883</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>ac900965-8c26-4ac5-a8ac-20b7b8333bcd</id>
+      <accessionNumber/>
+      <barcode>12153249</barcode>
+      <chronology>2005,08,20</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002884</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>ba68eddf-f25f-4bf2-a783-83e936e0e463</id>
+      <accessionNumber/>
+      <barcode>12153353</barcode>
+      <chronology>2005,05,14</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002885</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>2a789d3b-6c9c-446b-8b79-f0ed49b9d93a</id>
+      <accessionNumber/>
+      <barcode>12153390</barcode>
+      <chronology>2005,02,28</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000002886</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <callNumber>ZTG 40</callNumber>
+    <callNumberPrefix>R</callNumberPrefix>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>05.04.24 08:50</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Magazinsignatur (nur Zeitschriften) (7110)</name>
+      </holdingsNoteType>
+      <note>RZTG 40</note>
+    </notes>
+    <permanentLocation>
+      <name>ZB Magazin</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>ZB/GFG</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>40381764-a484-4775-9c36-f64fadc01107</id>
+      <accessionNumber/>
+      <barcode/>
+      <chronology/>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress>0</discoverySuppress>
+      <effectiveCallNumberComponents>
+        <callNumber>ZTG 40</callNumber>
+        <prefix>R</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>125194927-1</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Intellectual item</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+      <yearCaption>- Beil. "Vor fünfzig Jahren" zu: 1995,8.Mai</yearCaption>
+    </bareHoldingsItems>
+    <callNumber>ZTG 40</callNumber>
+    <callNumberPrefix>R</callNumberPrefix>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>19.01.24 09:30</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Magazinsignatur (nur Zeitschriften) (7110)</name>
+      </holdingsNoteType>
+      <note>RZTG 40</note>
+    </notes>
+    <permanentLocation>
+      <name>ZB Magazin</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>ZB/GFG</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>97105bf5-f843-4c9d-98d4-1d657e9ea931</id>
+      <accessionNumber/>
+      <barcode/>
+      <chronology/>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress>0</discoverySuppress>
+      <effectiveCallNumberComponents>
+        <callNumber>Y 8252</callNumber>
+        <prefix>2°</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>744426545-1</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Intellectual item</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+      <yearCaption>1949,Nov./Dez.</yearCaption>
+    </bareHoldingsItems>
+    <bareHoldingsItems>
+      <id>f528e682-5d7c-4199-8ec1-d02542111c32</id>
+      <accessionNumber/>
+      <barcode>15918704</barcode>
+      <chronology>1949</chronology>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress/>
+      <effectiveCallNumberComponents>
+        <callNumber>Y 8252</callNumber>
+        <prefix>2°</prefix>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>it00000016637</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <callNumber>Y 8252</callNumber>
+    <callNumberPrefix>2°</callNumberPrefix>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>12.08.24 22:39</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Lokaler Schlüssel</name>
+      </holdingsNoteType>
+      <note>00249</note>
+    </notes>
+    <permanentLocation>
+      <name>ZB Magazin</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>ZB/GFG</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>186eb271-3741-45a9-bee7-0f70ebc2fbda</id>
+      <accessionNumber/>
+      <barcode/>
+      <chronology/>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress>0</discoverySuppress>
+      <effectiveCallNumberComponents>
+        <callNumber>Zeitungsarchiv Publizistik</callNumber>
+        <prefix/>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>801203333-1</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Intellectual item</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+      <yearCaption>1985 -</yearCaption>
+    </bareHoldingsItems>
+    <callNumber>Zeitungsarchiv Publizistik</callNumber>
+    <callNumberPrefix/>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Standort (8201)</name>
+      </holdingsNoteType>
+      <note>Georg Forster-Gebäude, UG Raum 401</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>12.08.24 22:39</note>
+    </notes>
+    <permanentLocation>
+      <name>ZB Magazin</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>ZB/GFG</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>4451447e-03a3-4305-a8bc-85bc4c0fafff</id>
+      <accessionNumber/>
+      <barcode/>
+      <chronology/>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress>0</discoverySuppress>
+      <effectiveCallNumberComponents>
+        <callNumber>Ztg 2</callNumber>
+        <prefix/>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>083514821-1</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>0 Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Intellectual item</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <callNumber>Ztg 2</callNumber>
+    <callNumberPrefix/>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>12.08.24 22:39</note>
+    </notes>
+    <permanentLocation>
+      <name>BB TSK Magazin</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>BB TSK</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <hrid/>
+  <title>Frankfurter Allgemeine : Zeitung für Deutschland. Ausgabe D</title>
+</opt></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record></zs:records><zs:echoedSearchRetrieveRequest><zs:version>1.1</zs:version><zs:query>item.barcode==12153250</zs:query><zs:maximumRecords>1</zs:maximumRecords><zs:recordPacking>xml</zs:recordPacking><zs:recordSchema>raw</zs:recordSchema></zs:echoedSearchRetrieveRequest></zs:searchRetrieveResponse>
