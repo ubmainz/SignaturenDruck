@@ -1,0 +1,75 @@
+#previewBox.format_ZB_UM_Lesesaal_ZS {
+width: 25mm;
+height: 49mm;
+}
+.format_ZB_UM_Lesesaal_ZS {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_ZB_UM_Lesesaal_ZS {
+align-items: initial;
+}
+#toPrint.format_ZB_UM_Lesesaal_ZS > .capsule {
+height: 49mm;
+width: 25mm;
+overflow: hidden;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > p,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_1,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_2,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_2 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_3,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_3 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_4,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_4 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_5,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_5 {
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_ZB_UM_Lesesaal_ZS > .capsule > .innerBox > .line_1,
+.format_ZB_UM_Lesesaal_ZS > .innerBox > .line_1 {
+margin-top: 5mm;
+}
+@media print {
+@page {
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
+margin-left: 0.2mm;
+}
+body {
+margin: 0px;
+}
+}

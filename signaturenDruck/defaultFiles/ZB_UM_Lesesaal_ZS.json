@@ -1,22 +1,22 @@
 {
-  "name": "ZB_Magazin",
+  "name": "ZB_UM_Lesesaal_ZS",
   "printer": "Pica II RVK",
   "label": {
-    "width": "24mm",
+    "width": "25mm",
     "height": "49mm"
   },
-  "pdfName": "ZB_Magazin.pdf",
+  "pdfName": "ZB_UM_Lesesaal.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
   "lines": "5",
   "example": {
-    "shelfmark": "4° BE 9775-110",
+    "shelfmark": "LM 1:409-2024,356",
     "parts": [
-      "4° BE",
-      "9775",
-      "110",
+      "LM 1",
+      "409",
+      "2024,356",
       "",
       ""
     ]
