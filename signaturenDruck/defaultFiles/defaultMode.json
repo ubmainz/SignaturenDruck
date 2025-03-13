@@ -112,9 +112,9 @@
       "result": [
         "$1",
         "$2",
+        "",
         "$3",
-        "$4",
-        ""
+        "$4"
       ],
       "exampleLoc": "ZB Lesesaal",
       "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
@@ -130,8 +130,8 @@
         "$1",
         "$2",
         "$3",
-        "$4",
-        ""
+        "",
+        "$4"
       ],
       "exampleLoc": "ZB Lesesaal",
       "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
