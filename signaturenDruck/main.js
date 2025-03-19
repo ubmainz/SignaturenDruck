@@ -47,7 +47,7 @@ const configNew = {
     delimiter: ' '
   },
   modal: {
-    showModal: true,
+    showModal: false,
     modalTxt: 'Die ausgewählten Signaturen wurden gedruckt.'
   },
   SRU: {
