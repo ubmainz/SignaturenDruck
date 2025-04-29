@@ -90,6 +90,23 @@
     },
     {
       "id": 5,
+      "format": "TSK_Separiert",
+      "useRegEx": true,
+      "regEx": "^(CELTRA|SSC)\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "CELTRA KUL-ES 84:2",
+      "result": [
+        "$2$3",
+        "$4",
+        "$5",
+        "$6",
+        "$1"
+      ],
+      "exampleLoc": "BB TSK Separiert",
+      "locRegEx": "^BB\\sTSK\\sSepariert$"
+    },
+    {
+      "id": 6,
       "format": "TSK_Lehrbuchsammlung",
       "useRegEx": true,
       "regEx": "^LBS\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
@@ -106,7 +123,7 @@
       "locRegEx": "^BB\\sTSK\\sLehrbuchsammlung$"
     },
     {
-      "id": 6,
+      "id": 7,
       "format": "TSK_Lesesaal",
       "useRegEx": true,
       "regEx": "^([A-Za-zÖÄÜöäüß]+)\\s(\\d+)/(\\d+)\\W?(.*)$",

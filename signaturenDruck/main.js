@@ -323,7 +323,7 @@ function createWindow () {
   }
   // set the mainwindow title (name + version from package.json)
   let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v9 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v10 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
@@ -371,7 +371,7 @@ function checkConfig () {
     createConfig()
   }
   if (config.get('mode.defaultMode') === 'TSKModus') {
-    createModeFiles('TSKModus', ['RVK', 'NC', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Lesesaal'])
+    createModeFiles('TSKModus', ['RVK', 'NC', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Separiert', 'TSK_Lesesaal'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
     createModeFiles('defaultMode', ['RVK', 'NC', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','ZB_UM_Lesesaal_ZS','Rara',
     'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
