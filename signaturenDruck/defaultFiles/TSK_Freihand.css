@@ -56,12 +56,11 @@ margin-left: 3%;
 margin-top: 4.5mm;
 background-color:black;
 color:white;
-text-align: center;
 font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
-margin-left: 0%;
+margin-left: 3%;
 }
 .format_TSK_Freihand > .capsule > .innerBox > .line_1,
 .format_TSK_Freihand > .innerBox > .line_1 {
