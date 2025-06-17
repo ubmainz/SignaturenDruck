@@ -376,7 +376,7 @@ function checkConfig () {
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
     createModeFiles('defaultMode', ['RVK', 'NC', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','ZB_UM_Lesesaal_ZS','Rara',
     'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
-    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule'])
+    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule','ZB_Grosse_Baende'])
   }
 }
 
