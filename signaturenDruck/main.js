@@ -57,7 +57,7 @@ const configNew = {
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=pica.bar=',
     QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=pica.epn=',
     QueryPart2: '&maximumRecords=1&recordSchema=picaxml',
-    useCopy : false
+    useCopy: false
   },
   print: {
     printCoverLabel: true,
