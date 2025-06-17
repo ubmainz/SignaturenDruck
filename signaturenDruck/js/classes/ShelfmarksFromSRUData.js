@@ -88,7 +88,10 @@ class ShelfmarksFromSRUData {
           }
           sig.ppn = xpath.select("translate(string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name),'-','_')", sru)
           sig.date = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../notes[holdingsNoteType/name='Letzte Änderung CBS']/note)", sru)
-          var copyno = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/copyNumber)", sru)
+          var copyno = '' 
+          if (config.get('SRU.useCopy')) {
+              copyno = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/copyNumber)", sru)
+              }
           sig.txtOneLine = [
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/prefix)", sru),
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/callNumber)", sru),
