@@ -382,6 +382,26 @@
       ],
       "exampleLoc": "Kunsthochschule",
       "locRegEx": "^Kunsthochschule$"
+    },
+    {
+      "id": 23,
+      "format": "ZB_Grosse_Baende",
+      "useRegEx": true,
+      "regEx": "^keinMatch$$",
+      "delimiter": " ",
+      "exampleShelfmark": "",
+      "result": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "exampleLoc": "ZB_Magazin",
+      "locRegEx": "^keinMatch$$"
     }
   ]
 }
