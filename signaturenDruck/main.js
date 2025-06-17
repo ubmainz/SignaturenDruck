@@ -56,7 +56,8 @@ const configNew = {
     SRUAddress: 'https://sru.k10plus.de/opac-de-27',
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=pica.bar=',
     QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=pica.epn=',
-    QueryPart2: '&maximumRecords=1&recordSchema=picaxml'
+    QueryPart2: '&maximumRecords=1&recordSchema=picaxml',
+    useCopy : false
   },
   print: {
     printCoverLabel: true,
