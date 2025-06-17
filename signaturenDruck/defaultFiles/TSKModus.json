@@ -1,0 +1,143 @@
+{
+  "modeName": "TSKModus",
+  "subModes": [
+    {
+      "id": 0,
+      "format": "RVK",
+      "useRegEx": true,
+      "exampleShelfmark": "200 AP 14350 S375",
+      "regEx": "^(\\d{3})\\s([A-Z]{2})\\s(\\d+)\\s?([^\\s]+)?\\s?([^\\s]+)?\\s?(.*)$",
+      "delimiter": " ",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        ""
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
+    },
+    {
+      "id": 1,
+      "format": "NC",
+      "useRegEx": true,
+      "regEx": "^(\\d{3})\\s([A-Z])\\s(\\d+)\\.(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "123 A 043.169-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "",
+        ""
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
+    },
+    {
+      "id": 2,
+      "format": "TSK_Magazin_Mo",
+      "useRegEx": true,
+      "regEx": "^(\\d{2})(\\d{3})(\\d{3})$",
+      "delimiter": " ",
+      "exampleShelfmark": "84001041",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "BB TSK Magazin",
+      "locRegEx": "^BB\\sTSK\\sMagazin$"
+    },
+    {
+      "id": 3,
+      "format": "TSK_Magazin_Zs",
+      "useRegEx": true,
+      "regEx": "^(Z)\\s(\\d+)\\s?(.{0,4}[^\\s]{0,4})\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "Z 796 1995 23,3",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        ""
+      ],
+      "exampleLoc": "BB TSK Magazin",
+      "locRegEx": "^BB\\sTSK\\sMagazin$"
+    },
+    {
+      "id": 4,
+      "format": "TSK_Freihand",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "TRA-ALLG 12:3-1",
+      "result": [
+        "$1$2",
+        "$3",
+        "$4",
+        "$5",
+        "$2"
+      ],
+      "exampleLoc": "BB TSK Freihand",
+      "locRegEx": "^BB\\sTSK\\sFreihand$"
+    },
+    {
+      "id": 5,
+      "format": "TSK_Separiert",
+      "useRegEx": true,
+      "regEx": "^(CELTRA|SSC)\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "CELTRA KUL-ES 84:2",
+      "result": [
+        "$2$3",
+        "$4",
+        "$5",
+        "$6",
+        "$1"
+      ],
+      "exampleLoc": "BB TSK Separiert",
+      "locRegEx": "^BB\\sTSK\\sSepariert$"
+    },
+    {
+      "id": 6,
+      "format": "TSK_Lehrbuchsammlung",
+      "useRegEx": true,
+      "regEx": "^LBS\\s([A-Za-zÄÖÜäöüß]+-)([A-Za-zÄÖÜäöüß]+)\\s(\\d\\d[:\\.])([\\d,-]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "LBS LIN-EN 07:36-5,1 (2.Ex.)",
+      "result": [
+        "LBS",
+        "$1$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "BB TSK Lehrbuchsammlung",
+      "locRegEx": "^BB\\sTSK\\sLehrbuchsammlung$"
+    },
+    {
+      "id": 7,
+      "format": "TSK_Lesesaal",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÖÄÜöäüß]+)\\s(\\d+)/(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "UEDO 240/21",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "LESESAAL"
+      ],
+      "exampleLoc": "BB TSK Lesesaal",
+      "locRegEx": "^BB\\sTSK\\sLesesaal.?$"
+    }
+  ]
+}

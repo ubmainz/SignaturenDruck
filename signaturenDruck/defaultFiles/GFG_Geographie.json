@@ -1,54 +1,54 @@
 {
-  "name": "thulb_gross",
-  "printer": "\\\\printsrv\\ulbps101",
+  "name": "GFG_Geographie",
+  "printer": "Pica II RVK",
   "label": {
-    "width": "80mm",
-    "height": "43mm"
+    "width": "25mm",
+    "height": "49mm"
   },
-  "pdfName": "thulb_gross.pdf",
+  "pdfName": "GFG_Geographie.pdf",
   "paper": {
-    "width": "99970",
-    "height": "48920"
+    "width": "25400",
+    "height": "50800"
   },
   "lines": "6",
   "example": {
-    "shelfmark": "PÄD:TG:1420:Dan::2017",
+    "shelfmark": "0125 - 49, 17, 6. Aufl.",
     "parts": [
-      "PÄD",
-      "TG",
-      "1420",
-      "Dan",
-      "<br/>",
-      "2017"
+      "0125",
+      "- 49",
+      " 17",
+      " 6. Aufl.",
+      "",
+      "Geo"
     ]
   },
-  "centerHor": false,
-  "centerVer": true,
-  "lineSpace": "0",
+  "centerHor": true,
+  "centerVer": false,
+  "lineSpace": "5",
   "linesData": [
     {
       "id": 1,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
       "bold": true,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     },
     {
       "id": 2,
-      "font": "Arial Narrow",
+      "font": "Arial",
       "fontSize": "16",
       "bold": true,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     },
     {
       "id": 3,
       "font": "Arial Narrow",
       "fontSize": "16",
-      "bold": true,
+      "bold": false,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     },
     {
       "id": 4,
@@ -56,7 +56,7 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     },
     {
       "id": 5,
@@ -64,16 +64,16 @@
       "fontSize": "16",
       "bold": false,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     },
     {
       "id": 6,
-      "font": "Arial Narrow",
-      "fontSize": "16",
-      "bold": true,
+      "font": "Arial",
+      "fontSize": "10",
+      "bold": false,
       "italic": false,
-      "indent": "47"
+      "indent": "0"
     }
   ],
-  "marginTop": "-3"
+  "marginTop": "5"
 }

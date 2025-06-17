@@ -1,0 +1,69 @@
+{
+  "name": "TSK_Magazin_Zs",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "23mm",
+    "height": "49mm"
+  },
+  "pdfName": "TSK_Magazin_Zs.pdf",
+  "paper": {
+    "width": "25400",
+    "height": "50800"
+  },
+  "lines": "5",
+  "example": {
+    "shelfmark": "Z 796 1995 23,3",
+    "parts": [
+      "Z",
+      "796",
+      "1995",
+      "23,3"
+    ]
+  },
+  "centerHor": true,
+  "centerVer": false,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "24",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 1,
+      "font": "Arial",
+      "fontSize": "24",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 2,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
+     },
+    {
+      "id": 3,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 4,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
+    }
+  ],
+  "marginTop": "0"
+}

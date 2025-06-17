@@ -1,0 +1,43 @@
+{
+  "name": "USA",
+  "printer": "Pica II RVK",
+  "label": {
+    "width": "50mm",
+    "height": "24mm"
+  },
+  "pdfName": "USA.pdf",
+  "paper": {
+    "width": "50800",
+    "height": "25400"
+  },
+  "lines": "2",
+  "example": {
+    "shelfmark": "973.41092 WAS-2,23",
+    "parts": [
+      "973.41092",
+      "WAS-2,23"
+    ]
+  },
+  "centerHor": true,
+  "centerVer": true,
+  "lineSpace": "5",
+  "linesData": [
+    {
+      "id": 1,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    },
+    {
+      "id": 2,
+      "font": "Arial Narrow",
+      "fontSize": "16",
+      "bold": true,
+      "italic": false,
+      "indent": "0"
+    }
+  ],
+  "marginTop": "0"
+}

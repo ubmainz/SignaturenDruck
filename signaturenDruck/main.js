@@ -39,31 +39,31 @@ const configNew = {
   useK10plus: true,
   hideDeleteBtn: false,
   showMenu: false,
-  filterByLoc: false,
+  filterByLoc: true,
   example: {
-    shelfmark: 'PÄD:TG:1420:Dan::2017',
-    location: 'MAG',
-    regex: '^(.*):(.*):(.*):(.*):(.*):(.*)$',
-    delimiter: ':'
+    shelfmark: '200 AP 14350 S377',
+    location: 'UB',
+    regex: '^(\\d{3})\\s([A-Za-zÖÄÜöäüß]+)\\s(\\d+)\\s?(.*)\\s?(.*)?\\s?(.*)$',
+    delimiter: ' '
   },
   modal: {
-    showModal: true,
+    showModal: false,
     modalTxt: 'Die ausgewählten Signaturen wurden gedruckt.'
   },
   SRU: {
-    useSRU: false,
+    useSRU: true,
     printImmediately: false,
-    SRUAddress: 'https://sru.k10plus.de/opac-de-27',
-    QueryPart1: '?version=1.1&operation=searchRetrieve&query=pica.bar=',
-    QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=pica.epn=',
-    QueryPart2: '&maximumRecords=1&recordSchema=picaxml',
+    SRUAddress: 'https://folio-api.ub.uni-mainz.de/sru-ubmz-prod/ubmz',
+    QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
+    QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=holdings.hrid==',
+    QueryPart2: '&maximumRecords=1&recordSchema=raw',
     useCopy: false
   },
   print: {
-    printCoverLabel: true,
+    printCoverLabel: false,
     reverseOrder: false,
     showPrintDialog: false,
-    orientation: 'landscape',
+    orientation: 'portrait',
     scale: 'noscale',
     margin: {
       top: 0,
@@ -267,7 +267,7 @@ function closeEditorWindow () {
   editorWindow = null
 }
 
-function windowParams (width = 850, height = 570, show = true) {
+function windowParams (width = 850, height = 700, show = true) {
   return {
     width: width,
     height: height,
@@ -306,7 +306,7 @@ function createWindow () {
   //options.webPreferences.preload = path.join(__dirname, 'js\\renderer.js')
 
   if (config.store.devMode) {
-    options.height = 600
+    options.height = 730
   }
 
   mainWindow = new BrowserWindow(options)
@@ -323,7 +323,8 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion())
+  let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v10 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
@@ -370,10 +371,12 @@ function checkConfig () {
   } else {
     createConfig()
   }
-  if (config.get('mode.defaultMode') === 'thulbMode') {
-    createModeFiles('thulbMode', ['thulb_gross', 'thulb_klein', 'thulb_klein_1'])
+  if (config.get('mode.defaultMode') === 'TSKModus') {
+    createModeFiles('TSKModus', ['RVK', 'NC', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Separiert', 'TSK_Lesesaal'])
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['default_klein', 'default_gross'])
+    createModeFiles('defaultMode', ['RVK', 'NC', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','ZB_UM_Lesesaal_ZS','Rara',
+    'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
+    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule'])
   }
 }
 

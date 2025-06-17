@@ -3,21 +3,385 @@
   "subModes": [
     {
       "id": 0,
-      "format": "default_gross",
+      "format": "RVK",
       "useRegEx": true,
-      "exampleShelfmark": "PÄD:TG:1420:Dan::2017",
-      "regEx": "(.*):(.*):(.*):(.*):(.*):(.*)",
-      "delimiter": ":",
-      "result": ["Standort: $LOC", "$1 $2", "$3", "$4", "$5", "$6"]
+      "exampleShelfmark": "200 AP 14350 S375",
+      "regEx": "^(\\d{3})\\s([A-Z]{2})\\s(\\d+)\\s?(NF|[A-Z]\\d+)?\\s?([^\\s]+)?\\s?(.*)$",
+      "delimiter": " ",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        ""
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
     },
     {
       "id": 1,
-      "format": "default_klein",
+      "format": "NC",
       "useRegEx": true,
-      "exampleShelfmark": "2018 B 1024 :1",
-      "regEx": "^(\\w+\\s[\\w\\.\\,]+)([\\s\\/]?)([^\\/\\:]*)([\\/\\:]?)(.*)$",
-      "delimiter": ":",
-      "result": ["$1$2", "$3$4", "$5$6"]
+      "regEx": "^(\\d{3})\\s([A-Z])\\s(\\d+)\\.(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "123 A 043.169-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "",
+        ""
+      ],
+      "exampleLoc": "UB",
+      "locRegEx": ""
+    },
+    {
+      "id": 2,
+      "format": "USA",
+      "useRegEx": true,
+      "regEx": "^(\\d{3}\\.?\\d*)\\s(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "973.41092 WAS-2,23",
+      "result": [
+        "$1",
+        "$2"
+      ],
+      "exampleLoc": "USA-Bibliothek",
+      "locRegEx": "^USA-Bibliothek$"
+    },
+    {
+      "id": 3,
+      "format": "ZB_Magazin",
+      "useRegEx": true,
+      "regEx": "^(g?r?\\.?[24R]?°?\\s?[A-Za-z]+)\\s(.[\\w/,\\.]{0,3}\\w{0,4}[,/\\.]?)\\W?(.[\\w/,\\.]{0,3}\\w{0,4}[,/\\.]?)?\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "4° BE 9775-110",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        ""
+      ],
+      "exampleLoc": "ZB Magazin",
+      "locRegEx": "^ZB\\sMagazin$"
+    },
+    {
+      "id": 4,
+      "format": "Frankreich",
+      "useRegEx": true,
+      "regEx": "^(\\d{4})\\s([A-Za-z]+)\\s(\\d*)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "2100 FAD 4961-CD 1/2",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "ZB Magazin",
+      "locRegEx": "^ZB\\sMagazin$"
+    },
+    {
+      "id": 5,
+      "format": "LBS",
+      "useRegEx": true,
+      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)\\W?([^\\(\\.]*[^,\\(\\.])?,?(\\b\\d+\\.Aufl\\.|$|\\s)",
+      "delimiter": " ",
+      "exampleShelfmark": "13L 082-2,TX/CD,2.Aufl.",
+      "result": [
+        "$1 $2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "ZB Lehrbuchsammlung",
+      "locRegEx": "^ZB Lehrbuchsammlung$"
+    },
+    {
+      "id": 6,
+      "format": "ZB_UM_Lesesaal_ZS",
+      "useRegEx": true,
+      "regEx": "^(LM\\s\\d+):(\\w+)-?(.[\\w]{0,7}\\W*)?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "LM 1:409-2024,356",
+      "result": [
+        "$1",
+        "$2",
+        "",
+        "$3",
+        "$4"
+      ],
+      "exampleLoc": "ZB Lesesaal",
+      "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
+    },
+    {
+      "id": 7,
+      "format": "ZB_UM_Lesesaal",
+      "useRegEx": true,
+      "regEx": "^([A-ZÄÖÜ]\\w*)\\s(\\w+)\\s?([\\w/]+)?-?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "THEOL C 711-3.F.,9",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "",
+        "$4"
+      ],
+      "exampleLoc": "ZB Lesesaal",
+      "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
+    },
+    {
+      "id": 8,
+      "format": "ZB_Freihand",
+      "useRegEx": true,
+      "regEx": "^(\\d+)\\.(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "043.169-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "ZB Freihand",
+      "locRegEx": "^ZB\\sFreihand$"
+    },
+    {
+      "id": 9,
+      "format": "Rara",
+      "useRegEx": true,
+      "regEx": "^(RARA\\s)?([24]?°?\\s?[A-Za-z]+)\\s(\\d+)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "2° Si 481",
+      "result": [
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "Rara"
+      ],
+      "exampleLoc": "ZB Rara",
+      "locRegEx": "^ZB\\sRara$"
+    },
+    {
+      "id": 10,
+      "format": "GFG_Kunstgeschichte",
+      "useRegEx": true,
+      "regEx": "^(K[Aa][Tt]\\sI{1,3}|[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "J k.6/Fid.1-1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "",
+        "KG"
+      ],
+      "exampleLoc": "BB GFG Kunstgeschichte",
+      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+    },
+    {
+      "id": 11,
+      "format": "GFG_Kunstgeschichte_Gr",
+      "useRegEx": true,
+      "regEx": "^(#\\sK[Aa][Tt]\\sI{1,3}|#\\s[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "# KAT II M 25/1.19",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "",
+        "Großformat",
+        "KG"
+      ],
+      "exampleLoc": "BB GFG Kunstgeschichte",
+      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+    },
+    {
+      "id": 12,
+      "format": "GFG_Soziologie",
+      "useRegEx": true,
+      "regEx": "^([\\d\\.]+)[\\s-]([A-Z]+)[\\s-]([0-9IVXLCivxlc,\\s\\/-]*[0-9IVXLCivxlc\\/-])\\W*(\\d+\\.\\s?Ex\\.?)?$",
+      "delimiter": " ",
+      "exampleShelfmark": "31.6 HENZ 1-I, 3. Ex",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "SOZ"
+      ],
+      "exampleLoc": "BB GFG Soziologie",
+      "locRegEx": "^BB\\sGFG\\sSoziologie$"
+    },
+    {
+      "id": 13,
+      "format": "GFG_Politikwissenschaft",
+      "useRegEx": true,
+      "regEx": "^([A-Z].*)\\s(\\d[^\\s]*)\\s?([a-z]*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "FC-10 33 b",
+      "result": [
+        "$1",
+        "$2$3",
+        "POL"
+      ],
+      "exampleLoc": "BB GFG Politikwissenschaft",
+      "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
+    },
+    {
+      "id": 14,
+      "format": "GFG_Zeile_quer_Psy",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "PSYCH"
+      ],
+      "exampleLoc": "BB GFG Psychologie",
+      "locRegEx": "^BB\\sGFG\\sPsychologie$"
+    },
+    {
+      "id": 15,
+      "format": "GFG_Zeile_quer_Erz",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "PAED"
+      ],
+      "exampleLoc": "BB GFG Erziehungswissenschaft",
+      "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$"
+    },
+    {
+      "id": 16,
+      "format": "GFG_Zeile_quer_Geo",
+      "useRegEx": true,
+      "regEx": "^([A-ZÖÄÜ]\\s.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "F 12-81 1.Aufl.",
+      "result": [
+        "$1",
+        "GEO"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo.*$"
+    },
+    {
+      "id": 17,
+      "format": "GFG_Zeile_quer_Pub",
+      "useRegEx": true,
+      "regEx": "^(.+)$",
+      "delimiter": " ",
+      "exampleShelfmark": "HB 13 082, 3",
+      "result": [
+        "$1",
+        "PUB"
+      ],
+      "exampleLoc": "BB GFG Publizistik",
+      "locRegEx": "^BB\\sGFG\\sPublizistik$"
+    },
+    {
+      "id": 18,
+      "format": "GFG_Film",
+      "useRegEx": true,
+      "regEx": "^([A-ZÖÄÜ]+\\s?\\d*)\\s([A-Za-zÄÖÜäöüß\\s]+[0-9\\.-][0-9\\.]*)\\W?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "G 08 Special 7-TX/DVD",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "FILM"
+      ],
+      "exampleLoc": "BB GFG Filmwissenschaft",
+      "locRegEx": "^BB\\sGFG\\sFilmwissenschaft$"
+    },
+    {
+      "id": 19,
+      "format": "GFG_Sport",
+      "useRegEx": true,
+      "regEx": "^([A-ZÖÄÜ])\\s([0-9\\,]+\\.)([0-9a-z\\/\\+-]*$|[0-9a-z\\/\\+-]*[\\/,])([^\\/,]{0,8}[\\.])?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "G 2,5,2.167/Ausg.2007",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "SPORT"
+      ],
+      "exampleLoc": "BB GFG Sport",
+      "locRegEx": "^BB\\sGFG\\sSport$"
+    },
+    {
+      "id": 20,
+      "format": "GFG_Geographie",
+      "useRegEx": true,
+      "regEx": "^(\\d+)\\s*(-\\s*\\d+),?([^,]*),?([^,]*),?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "0125 - 49, 17, 6. Aufl.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "GEO"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo$"
+    },
+    {
+      "id": 21,
+      "format": "GFG_Geowissenschaften",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÖÄÜöäüß]+)\\s([\\d\\.]+)\\s*(-\\s*\\d+),?([^,]*),?([^,]*),?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "PALÄO 32.324 - 34, Pt. U, Vol. 2, 1. Ex.",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        "GEO"
+      ],
+      "exampleLoc": "BB GFG Geo",
+      "locRegEx": "^BB\\sGFG\\sGeo$"
+    },
+    {
+      "id": 22,
+      "format": "Kunsthochschule",
+      "useRegEx": true,
+      "regEx": "^([\\w\\.-]+)[^\\w\\.]+(\\d+\\s?:\\s?[\\w\\.]+|[\\w\\.-]+)[^\\w\\.]*(\\d+\\.\\s?Ex\\.?|\\d+\\s?:\\s?[\\w\\.]+|[\\w\\.-]*)[^\\w\\.]*(\\d+\\.\\s?Ex\\.?|\\d+\\s?:\\s?[\\w\\.]+|[\\w\\.-]*)[^\\w\\.]*(\\d+\\.\\s?Ex\\.?|\\d+\\s?:\\s?[\\w\\.]+|[\\w\\.-]*)[^\\w\\.]*(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "KTH - POL 15",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5",
+        "$6",
+        "KHS"
+      ],
+      "exampleLoc": "Kunsthochschule",
+      "locRegEx": "^Kunsthochschule$"
     }
   ]
 }
