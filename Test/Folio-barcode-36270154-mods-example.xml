@@ -4,7 +4,7 @@
     <zs:numberOfRecords>1</zs:numberOfRecords>
     <zs:records>
         <zs:record>
-            <zs:recordSchema>raw</zs:recordSchema>
+            <zs:recordSchema>mods</zs:recordSchema>
             <zs:recordPacking>xml</zs:recordPacking>
             <zs:recordData>
                 <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink"
