@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+    <zs:version>1.1</zs:version>
+    <zs:numberOfRecords>1</zs:numberOfRecords>
+    <zs:records>
+        <zs:record>
+            <zs:recordSchema>raw</zs:recordSchema>
+            <zs:recordPacking>xml</zs:recordPacking>
+            <zs:recordData>
+                <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.8"
+                    xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
+                    <titleInfo>
+                        <title>Gerthsen Physik : mit 92 Tabellen, 109 durchgerechneten Beispielen und 1049 Aufgaben mit vollständigen Lösungswegen ; [die ganze Physik zum 21. Jahrhundert] / Dieter Meschede</title>
+                    </titleInfo>
+                    <name type="personal">
+                        <displayForm>Gerthsen, Christian *1894-1956*</displayForm>
+                        <role>
+                            <roleTerm type="text">Verfasser</roleTerm>
+                        </role>
+                    </name>
+                    <name type="personal">
+                        <displayForm>Meschede, Dieter *1954-*</displayForm>
+                        <role>
+                            <roleTerm type="text">Herausgeber</roleTerm>
+                        </role>
+                    </name>
+                    <typeOfResource>text</typeOfResource>
+                    <genre authority="hebis">Lehrbuch</genre>
+                    <originInfo>
+                        <place>
+                            <placeTerm type="text">Berlin</placeTerm>
+                        </place>
+                        <publisher>Springer</publisher>
+                        <dateIssued encoding="w3cdtf" keyDate="yes">2002</dateIssued>
+                        <edition>21., völlig neubearbeitete Auflage</edition>
+                        <issuance>monographic</issuance>
+                    </originInfo>
+                    <language>
+                        <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                    </language>
+                    <physicalDescription>
+                        <extent>XXIII, 1288 Seiten : Illustrationen, Diagramme</extent>
+                        <note>XXIII, 1288 Seiten : Illustrationen, Diagramme</note>
+                    </physicalDescription>
+                    <classification authority="RVK">UC 100</classification>
+                    <identifier type="CIP-Nummer">01,N32,0398</identifier>
+                    <identifier type="DNB-Nummer">96148912X</identifier>
+                    <identifier type="Identnummer der erstkatalogisierenden Institution">DNB: 96148912X</identifier>
+                    <identifier type="ISBN">354042024X Gb. : DM 139.90, sfr 121.00, ffr 527.00, £ 48.00, lire 154510.00, $ 66.65</identifier>
+                    <identifier type="OCLC">264810336</identifier>
+                    <identifier type="PPN">09951009X</identifier>
+                    <identifier type="WV-Nummer">01,A47,0815</identifier>
+                    <location>
+                        <physicalLocation>UB Mainz</physicalLocation>
+                        <holdingSimple>
+                            <copyInformation> <!-- repeated for each item in all holdings in FOLIO -->
+                                <form>Druckschrift</form>
+                                <subLocation>BB MINT</subLocation>
+                                <shelfLocator>UC 1000 GER1 (21) +2</shelfLocator>
+                                <note type="note">PMC 2007 Übernahme aus ZB</note>
+                                <note type="_status">Available</note>
+                                <itemIdentifier type="barcode">36270154</itemIdentifier>
+                                <itemIdentifier type="hrid">164092595-1</itemIdentifier>
+                                <itemIdentifier type="holdinghrid">164092595</itemIdentifier>
+                            </copyInformation>
+                        </holdingSimple>
+                    </location>
+                    <recordInfo>
+                        <recordChangeDate encoding="w3cdtf">25-06-18</recordChangeDate>
+                        <recordIdentifier source="hebis">09951009X</recordIdentifier>
+                    </recordInfo>
+                </mods>
+            </zs:recordData>
+            <zs:recordPosition>1</zs:recordPosition>
+        </zs:record>
+    </zs:records>
+    <zs:echoedSearchRetrieveRequest>
+        <zs:version>1.1</zs:version>
+        <zs:query>item.barcode==36270154</zs:query>
+        <zs:maximumRecords>1</zs:maximumRecords>
+        <zs:recordPacking>xml</zs:recordPacking>
+        <zs:recordSchema>raw</zs:recordSchema>
+    </zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.1</zs:version><zs:numberOfRecords>1</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema>raw</zs:recordSchema><zs:recordPacking>xml</zs:recordPacking><zs:recordData><opt>
+  <id>c73ea34e-7b39-4e6c-af6b-45a1066f590b</id>
+  <holdingsRecords2>
+    <bareHoldingsItems>
+      <id>448d6741-c7b8-450a-b5ab-9d98a81a2cd9</id>
+      <accessionNumber/>
+      <barcode>36270154</barcode>
+      <chronology/>
+      <copyNumber/>
+      <descriptionOfPieces/>
+      <discoverySuppress>0</discoverySuppress>
+      <effectiveCallNumberComponents>
+        <callNumber>UC 1000 GER1 (21) +2</callNumber>
+        <prefix/>
+        <suffix/>
+      </effectiveCallNumberComponents>
+      <enumeration/>
+      <hrid>164092595-1</hrid>
+      <itemIdentifier/>
+      <materialType>
+        <name>Druckschrift</name>
+      </materialType>
+      <permanentLocation/>
+      <status>
+        <name>Available</name>
+      </status>
+      <temporaryLocation/>
+      <volume/>
+    </bareHoldingsItems>
+    <callNumber>UC 1000 GER1 (21) +2</callNumber>
+    <callNumberPrefix/>
+    <callNumberSuffix/>
+    <copyNumber/>
+    <notes>
+      <holdingsNoteType>
+        <name>Note</name>
+      </holdingsNoteType>
+      <note>PMC 2007 Übernahme aus ZB</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Letzte Änderung CBS</name>
+      </holdingsNoteType>
+      <note>21.02.18 16:57</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Weitere Signaturen (7101)</name>
+      </holdingsNoteType>
+      <note>4° BD 859</note>
+    </notes>
+    <notes>
+      <holdingsNoteType>
+        <name>Weitere Signaturen (7101)</name>
+      </holdingsNoteType>
+      <note>BD 859</note>
+    </notes>
+    <permanentLocation>
+      <name>BB MINT</name>
+      <institution>
+        <name>UB Mainz</name>
+      </institution>
+      <library>
+        <name>BB MIN</name>
+      </library>
+    </permanentLocation>
+    <shelvingTitle/>
+    <temporaryLocation/>
+  </holdingsRecords2>
+  <hrid/>
+  <title>Gerthsen Physik : mit 92 Tabellen, 109 durchgerechneten Beispielen und 1049 Aufgaben mit vollständigen Lösungswegen ; [die ganze Physik zum 21. Jahrhundert] / Dieter Meschede</title>
+</opt></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record></zs:records><zs:echoedSearchRetrieveRequest><zs:version>1.1</zs:version><zs:query>item.barcode==36270154</zs:query><zs:maximumRecords>1</zs:maximumRecords><zs:recordPacking>xml</zs:recordPacking><zs:recordSchema>raw</zs:recordSchema></zs:echoedSearchRetrieveRequest></zs:searchRetrieveResponse>
