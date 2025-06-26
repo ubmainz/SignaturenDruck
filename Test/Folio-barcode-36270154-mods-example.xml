@@ -80,6 +80,6 @@
         <zs:query>item.barcode==36270154</zs:query>
         <zs:maximumRecords>1</zs:maximumRecords>
         <zs:recordPacking>xml</zs:recordPacking>
-        <zs:recordSchema>raw</zs:recordSchema>
+        <zs:recordSchema>mods</zs:recordSchema>
     </zs:echoedSearchRetrieveRequest>
 </zs:searchRetrieveResponse>
