@@ -303,8 +303,7 @@
       "result": [
         "$1",
         "$2",
-        "$3",
-        "FILM"
+        "$3"
       ],
       "exampleLoc": "BB GFG Filmwissenschaft",
       "locRegEx": "^BB\\sGFG\\sFilmwissenschaft$"
