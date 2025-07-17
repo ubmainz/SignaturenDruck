@@ -57,7 +57,7 @@ const configNew = {
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
     QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=holdings.hrid==',
     QueryPart2: '&maximumRecords=1&recordSchema=raw',
-    useCopy: true
+    useCopy: false
   },
   print: {
     printCoverLabel: false,
@@ -73,7 +73,7 @@ const configNew = {
     }
   },
   mode: {
-    defaultMode: 'TSKModus'
+    defaultMode: 'defaultMode'
   },
   devMode: false
 }
