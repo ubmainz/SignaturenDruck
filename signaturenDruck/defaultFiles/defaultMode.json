@@ -100,7 +100,7 @@
         "$5"
       ],
       "exampleLoc": "ZB Lehrbuchsammlung",
-      "locRegEx": "^ZB Lehrbuchsammlung|BB ReWi Lernzentrum$"
+      "locRegEx": "^ZB Lehrbuchsammlung|BB ReWi Lernzentrum|BB Theologie Lehrbuchsammlung|BB MINT Lehrbuchsammlung$"
     },
     {
       "id": 6,
