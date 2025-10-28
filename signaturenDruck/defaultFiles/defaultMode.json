@@ -401,6 +401,40 @@
       ],
       "exampleLoc": "ZB_Magazin",
       "locRegEx": "^keinMatch$$"
+    },
+    {
+      "id": 24,
+      "format": "UM_Rechtsmedizin",
+      "useRegEx": true,
+      "regEx": "^(Rechtsmedizin)\\s([A-Z]+\\s\\d*,?\\d+|Diss)[-\\s]?(\\d*,?\\d+)?[,\\s]?(\\d\\.Ex\\.|[A-Z/]+|\\d+/\\d+)?$",
+      "delimiter": " ",
+      "exampleShelfmark": "Rechtsmedizin ETH 56",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "UM Institut für Rechtsmedizin",
+      "locRegEx": "^.*Rechtsmedizin.*$"
+    },
+    {
+      "id": 25,
+      "format": "UM_Psychiatrie",
+      "useRegEx": true,
+      "regEx": "^(Psychiatrie)\\s(\\d*,?\\d+|Diss)[-\\s]?(\\d*,?\\d+)?[,\\s]?(\\d\\.Ex\\.|[A-Z/]+|\\d+/\\d+)?$",
+      "delimiter": " ",
+      "exampleShelfmark": "Psychiatrie 4455",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "UM Klinik für Psychiatrie und Psychotherapie",
+      "locRegEx": "^.*Psychiatrie.*$"
     }
   ]
 }

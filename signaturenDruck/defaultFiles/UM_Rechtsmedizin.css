@@ -1,0 +1,76 @@
+#previewBox.format_UM_Rechtsmedizin {
+width: 25mm;
+height: 49mm;
+}
+.format_UM_Rechtsmedizin {
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+}
+.format_UM_Rechtsmedizin {
+align-items: initial;
+}
+#toPrint.format_UM_Rechtsmedizin > .capsule {
+height: 49mm;
+width: 25mm;
+overflow: hidden;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > p,
+.format_UM_Rechtsmedizin > .innerBox > p {
+margin: 5px 0px 5px 0px;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_1,
+.format_UM_Rechtsmedizin > .innerBox > .line_1 {
+font-family: "Arial";
+font-size: 10pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_2,
+.format_UM_Rechtsmedizin > .innerBox > .line_2 {
+margin-top: 4mm;
+font-family: "Arial Narrow";
+font-size: 16pt;
+font-weight: bold;
+font-style: normal;
+margin-left: 0%;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_3,
+.format_UM_Rechtsmedizin > .innerBox > .line_3 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_4,
+.format_UM_Rechtsmedizin > .innerBox > .line_4 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_5,
+.format_UM_Rechtsmedizin > .innerBox > .line_5 {
+font-family: "Arial";
+font-size: 16pt;
+font-weight: normal;
+font-style: normal;
+margin-left: 0%;
+}
+.format_UM_Rechtsmedizin > .capsule > .innerBox > .line_1,
+.format_UM_Rechtsmedizin > .innerBox > .line_1 {
+margin-top: 4mm;
+}
+@media print {
+@page {
+size: 25.4mm 50.8mm;
+margin-top: 0.9mm;
+margin-left: 0.2mm;
+}
+body {
+margin: 0px;
+}
+}
