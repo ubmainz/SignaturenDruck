@@ -324,7 +324,7 @@ function createWindow () {
   }
   // set the mainwindow title (name + version from package.json)
   let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v11 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v12 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),

@@ -1,7 +1,7 @@
 {
   "name": "SignaturenDruck",
   "version": "1.3.22",
-  "description": "SignaturenDruck UB Mz v11",
+  "description": "SignaturenDruck UB Mz v12",
 
   "main": "main.js",
   "dependencies": {
