@@ -75,6 +75,37 @@ class ShelfmarksFromSRUData {
           sig.loanIndication = selectpica("string(//pica:datafield[(@tag='209A') and (@occurrence='"+occ+"')]/pica:subfield[@code='d'])", sru)
           break
  
+       case 'mods':
+       case 'info:srw/schema/1/mods-v3.8':
+       case 'info:srw/schema/1/mods-v3.7':
+       case 'info:srw/schema/1/mods-v3.6': // at least mods version 3.6
+          var selectmods = xpath.useNamespaces({"zs": "http://www.loc.gov/zing/srw/", "mods": "http://www.loc.gov/mods/v3"})
+          if (dataMode === 'PPN') {
+            var uuid = selectmods("string(//mods:itemIdentifier[(@type='uuid') and (../mods:itemIdentifier[@type='barcode']='"+key+"')])", sru)
+          } else {
+            if (selectmods("boolean(//mods:itemIdentifier='"+key+"')", sru)) {
+               var uuid = selectmods("string(//mods:itemIdentifier[(@type='uuid') and (../mods:itemIdentifier='"+key+"')])", sru) // key is item hrid
+            } else {
+               var uuid = selectmods("string(//mods:itemIdentifier[(@type='uuid') and (../../../mods:holdingExternal/identifier='"+key+"')])", sru)
+               // key is holdings hrid/EPN
+               }
+          }
+          sig.date = selectmods("string(//mods:recordChangeDate)", sru).split("T")[0]
+          var copyno = ''
+          if (config.get('SRU.useCopy')) {
+              copyno = selectmods("string(//mods:itemIdentifier[(@type='copyNumber') and (../mods:itemIdentifier[@type='uuid']='"+uuid+"')])", sru)
+              }
+          sig.txtOneLine = [
+             selectmods("string(//mods:shelfLocator[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru),
+             selectmods("string(//mods:enumerationAndChronology[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru),
+             copyno ? '('+copyno+'.Ex.)' : ''
+             ].filter(Boolean).join(" ")
+          sig.location = selectmods("string(//mods:subLocation[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru)
+          sig.ppn = sig.location
+          sig.exNr = selectmods("string(//mods:itemIdentifier[(@type='hrid') and (../mods:itemIdentifier[@type='uuid']='"+uuid+"')])", sru)
+          sig.loanIndication = ''
+          break
+
        case 'raw':  // FOLIO "Quesnelia"
           if (dataMode === 'PPN') {
             var hrid = xpath.select("string(//bareHoldingsItems[barcode='"+key+"']/hrid)", sru)
@@ -108,7 +139,7 @@ class ShelfmarksFromSRUData {
           sig.error = 'SRU: Unbekanntes Datenschema'
           
       }
-      
+
       const allSubModeData = mode.modes[config.get('mode.defaultMode')].subModes
       _.forEach(allSubModeData, function (value) {
         const data = {
