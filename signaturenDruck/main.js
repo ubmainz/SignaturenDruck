@@ -324,7 +324,7 @@ function createWindow () {
   }
   // set the mainwindow title (name + version from package.json)
   let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v12 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v13 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
@@ -376,7 +376,7 @@ function checkConfig () {
   } else if (config.get('mode.defaultMode') === 'defaultMode') {
     createModeFiles('defaultMode', ['RVK', 'NC', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','ZB_UM_Lesesaal_ZS','Rara',
     'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
-    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule','ZB_Grosse_Baende','UM_Rechtsmedizin','UM_Psychiatrie'])
+    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule','ZB_Grosse_Baende','UM_Rechtsmedizin','UM_Psychiatrie','Musikwissenschaft','Musik'])
   }
 }
 

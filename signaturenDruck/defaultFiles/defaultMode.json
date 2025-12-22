@@ -100,7 +100,7 @@
         "$5"
       ],
       "exampleLoc": "ZB Lehrbuchsammlung",
-      "locRegEx": "^ZB Lehrbuchsammlung|BB ReWi Lernzentrum|BB Theologie Lehrbuchsammlung|BB MINT Lehrbuchsammlung|UM Lehrbuchsammlung$"
+      "locRegEx": "Lehrbuchsammlung|Lernzentrum"
     },
     {
       "id": 6,
@@ -117,7 +117,7 @@
         "$4"
       ],
       "exampleLoc": "ZB Lesesaal",
-      "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
+      "locRegEx": "Lesesaal$"
     },
     {
       "id": 7,
@@ -134,7 +134,7 @@
         "$4"
       ],
       "exampleLoc": "ZB Lesesaal",
-      "locRegEx": "^ZB\\sLesesaal$|^UM\\sLesesaal$"
+      "locRegEx": "Lesesaal$"
     },
     {
       "id": 8,
@@ -184,7 +184,7 @@
         "KG"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
-      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+      "locRegEx": "Kunstgeschichte"
     },
     {
       "id": 11,
@@ -203,7 +203,7 @@
         "KG"
       ],
       "exampleLoc": "BB GFG Kunstgeschichte",
-      "locRegEx": "^BB\\sGFG\\sKunstgeschichte$"
+      "locRegEx": "Kunstgeschichte"
     },
     {
       "id": 12,
@@ -220,7 +220,7 @@
         "SOZ"
       ],
       "exampleLoc": "BB GFG Soziologie",
-      "locRegEx": "^BB\\sGFG\\sSoziologie$"
+      "locRegEx": "Soziologie"
     },
     {
       "id": 13,
@@ -235,7 +235,7 @@
         "POL"
       ],
       "exampleLoc": "BB GFG Politikwissenschaft",
-      "locRegEx": "^BB\\sGFG\\sPolitikwissenschaft$"
+      "locRegEx": "Politikwissenschaft"
     },
     {
       "id": 14,
@@ -249,7 +249,7 @@
         "PSYCH"
       ],
       "exampleLoc": "BB GFG Psychologie",
-      "locRegEx": "^BB\\sGFG\\sPsychologie$"
+      "locRegEx": "Psychologie"
     },
     {
       "id": 15,
@@ -263,7 +263,7 @@
         "PAED"
       ],
       "exampleLoc": "BB GFG Erziehungswissenschaft",
-      "locRegEx": "^BB\\sGFG\\sErziehungswissenschaft$"
+      "locRegEx": "Erziehungswissenschaft"
     },
     {
       "id": 16,
@@ -277,7 +277,7 @@
         "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
-      "locRegEx": "^BB\\sGFG\\sGeo.*$"
+      "locRegEx": "GFG\\sGeo"
     },
     {
       "id": 17,
@@ -291,7 +291,7 @@
         "PUB"
       ],
       "exampleLoc": "BB GFG Publizistik",
-      "locRegEx": "^BB\\sGFG\\sPublizistik$"
+      "locRegEx": "Publizistik"
     },
     {
       "id": 18,
@@ -306,7 +306,7 @@
         "$3"
       ],
       "exampleLoc": "BB GFG Filmwissenschaft",
-      "locRegEx": "^BB\\sGFG\\sFilmwissenschaft$"
+      "locRegEx": "Filmwissenschaft"
     },
     {
       "id": 19,
@@ -324,7 +324,7 @@
         "SPORT"
       ],
       "exampleLoc": "BB GFG Sport",
-      "locRegEx": "^BB\\sGFG\\sSport$"
+      "locRegEx": "Sport"
     },
     {
       "id": 20,
@@ -342,7 +342,7 @@
         "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
-      "locRegEx": "^BB\\sGFG\\sGeo$"
+      "locRegEx": "GFG\\sGeo"
     },
     {
       "id": 21,
@@ -361,7 +361,7 @@
         "GEO"
       ],
       "exampleLoc": "BB GFG Geo",
-      "locRegEx": "^BB\\sGFG\\sGeo$"
+      "locRegEx": "GFG\\sGeo"
     },
     {
       "id": 22,
@@ -380,7 +380,7 @@
         "KHS"
       ],
       "exampleLoc": "Kunsthochschule",
-      "locRegEx": "^Kunsthochschule$"
+      "locRegEx": "Kunsthochschule"
     },
     {
       "id": 23,
@@ -417,7 +417,7 @@
         "$5"
       ],
       "exampleLoc": "UM Institut für Rechtsmedizin",
-      "locRegEx": "^.*Rechtsmedizin.*$"
+      "locRegEx": "Rechtsmedizin"
     },
     {
       "id": 25,
@@ -434,7 +434,39 @@
         "$5"
       ],
       "exampleLoc": "UM Klinik für Psychiatrie und Psychotherapie",
-      "locRegEx": "^.*Psychiatrie.*$"
+      "locRegEx": "Psychiatrie"
+    },
+    {
+      "id": 26,
+      "format": "Musikwissenschaft",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÄÖÜäöüß]+\\s?[a-zäöü]*)\\s([^\\/\\s]+$|[^\\/]{0,8}[\\s\\/])([^\\/\\s]*$|[^\\/]{0,8}[\\s\\/])(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "E wa 399.7/6,1",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "exampleLoc": "Philosophicum, Musikwissenschaft, Freihand",
+      "locRegEx": "Musikwissenschaft"
+    },
+    {
+      "id": 27,
+      "format": "Musik",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÄÖÜäöüß]+\\s\\d+)\\s(Bach,\\sJ\\.\\sS\\.|[A-Za-zÄÖÜäöüß]+)\\s?(.*)$",
+      "delimiter": " ",
+      "exampleShelfmark": "W 1 Händel IV, 4 (1-2) 2 neu",
+      "result": [
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "exampleLoc": "Philosophicum, Hochschule für Musik, Magazin",
+      "locRegEx": "Hochschule\\sfür\\sMusik"
     }
   ]
 }
