@@ -117,7 +117,7 @@
         "$4"
       ],
       "exampleLoc": "ZB Lesesaal",
-      "locRegEx": "Lesesaal$"
+      "locRegEx": "Lesesaal"
     },
     {
       "id": 7,
@@ -133,8 +133,8 @@
         "",
         "$4"
       ],
-      "exampleLoc": "ZB Lesesaal",
-      "locRegEx": "Lesesaal$"
+      "exampleLoc": "UM Lesesaal",
+      "locRegEx": "Lesesaal"
     },
     {
       "id": 8,
