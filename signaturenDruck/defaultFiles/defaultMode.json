@@ -43,12 +43,12 @@
       "id": 2,
       "format": "USA",
       "useRegEx": true,
-      "regEx": "^(\\d{3}\\.?\\d*)\\s(.+)$",
+      "regEx": "^(Oversize\\s)?(\\d{3}\\.?\\d*)\\s(.+)$",
       "delimiter": " ",
       "exampleShelfmark": "973.41092 WAS-2,23",
       "result": [
-        "$1",
-        "$2"
+        "$2",
+        "$3"
       ],
       "exampleLoc": "USA-Bibliothek",
       "locRegEx": "^USA-Bibliothek$"
@@ -172,7 +172,7 @@
       "id": 10,
       "format": "GFG_Kunstgeschichte",
       "useRegEx": true,
-      "regEx": "^(K[Aa][Tt]\\sI{1,3}|[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "regEx": "^(K[Aa][Tt]\\sI{1,3}|[A-Z][0-9A-Za-zÄÖÜäöüß\\.]{1,6})[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "J k.6/Fid.1-1",
       "result": [
@@ -190,14 +190,14 @@
       "id": 11,
       "format": "GFG_Kunstgeschichte_Gr",
       "useRegEx": true,
-      "regEx": "^(#\\sK[Aa][Tt]\\sI{1,3}|#\\s[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
+      "regEx": "^(GROSSFORMAT\\s|#)(K[Aa][Tt]\\sI{1,3}|[A-Z][0-9A-Za-zÄÖÜäöüß\\.]*)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.]+)[^0-9A-Za-zÄÖÜäöüß\\.]([0-9A-Za-zÄÖÜäöüß\\.,-]+)[^0-9A-Za-zÄÖÜäöüß\\.,-]?(.*)$",
       "delimiter": " ",
-      "exampleShelfmark": "# KAT II M 25/1.19",
+      "exampleShelfmark": "GROSSFORMAT KAT II M 25/1.19",
       "result": [
-        "$1",
         "$2",
         "$3",
         "$4",
+        "$5",
         "",
         "Großformat",
         "KG"
