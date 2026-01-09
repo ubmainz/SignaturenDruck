@@ -1,5 +1,5 @@
 {
-  "modeName": "defaultMode",
+  "modeName": "CampusMainzModus",
   "subModes": [
     {
       "id": 0,
@@ -386,7 +386,7 @@
       "id": 23,
       "format": "ZB_Grosse_Baende",
       "useRegEx": true,
-      "regEx": "^keinMatch$$",
+      "regEx": "^EingabekeinMatch$",
       "delimiter": " ",
       "exampleShelfmark": "",
       "result": [
@@ -400,7 +400,7 @@
         ""
       ],
       "exampleLoc": "ZB_Magazin",
-      "locRegEx": "^keinMatch$$"
+      "locRegEx": "^keinMatch$"
     },
     {
       "id": 24,

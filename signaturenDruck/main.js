@@ -73,7 +73,7 @@ const configNew = {
     }
   },
   mode: {
-    defaultMode: 'defaultMode'
+    defaultMode: 'CampusMainzModus'
   },
   devMode: false
 }
@@ -385,10 +385,18 @@ function createModeFiles (modeName) {
 }
 
 function checkAndCreate (pathName, fileName, ending) {
-  if (!fs.existsSync(pathName + fileName + ending)) {
-    const file = fs.readFileSync(path.join(process.resourcesPath, '.\\defaultFiles\\' + fileName + ending), 'utf8')
-    fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
-  }
+  try {
+    if (process.argv[1]) {
+        let file = fs.readFileSync(path.join(process.argv[1], fileName + ending), 'utf8')
+        fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
+      }
+      else if (!fs.existsSync(pathName + fileName + ending)) {
+        let file = fs.readFileSync(path.join(process.resourcesPath, '.\\defaultFiles\\' + fileName + ending), 'utf8')
+        fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
+      }
+        } catch (error) {
+            dialog.showErrorBox('Problem mit Formatdatei',error.message)
+    }
 }
 
 // creates directory (if not already there)
