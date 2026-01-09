@@ -371,20 +371,16 @@ function checkConfig () {
   } else {
     createConfig()
   }
-  if (config.get('mode.defaultMode') === 'TSKModus') {
-    createModeFiles('TSKModus', ['RVK', 'NC', 'TSK_Magazin_Zs', 'TSK_Magazin_Mo', 'TSK_Lehrbuchsammlung', 'TSK_Freihand', 'TSK_Separiert', 'TSK_Lesesaal'])
-  } else if (config.get('mode.defaultMode') === 'defaultMode') {
-    createModeFiles('defaultMode', ['RVK', 'NC', 'ZB_Magazin', 'Frankreich','LBS','USA','ZB_Freihand','ZB_UM_Lesesaal','ZB_UM_Lesesaal_ZS','Rara',
-    'GFG_Film','GFG_Geographie','GFG_Geowissenschaften','GFG_Kunstgeschichte','GFG_Kunstgeschichte_Gr','GFG_Politikwissenschaft','GFG_Soziologie','GFG_Sport',
-    'GFG_Zeile_quer_Erz','GFG_Zeile_quer_Geo','GFG_Zeile_quer_Psy','GFG_Zeile_quer_Pub','Kunsthochschule','ZB_Grosse_Baende','UM_Rechtsmedizin','UM_Psychiatrie','Musikwissenschaft','Musik'])
-  }
+  createModeFiles(config.get('mode.defaultMode'))
 }
 
-function createModeFiles (modeName, subModeNames) {
+function createModeFiles (modeName) {
   checkAndCreate(defaultProgramPath + '\\Modi\\', modeName, '.json')
-  subModeNames.forEach(fileName => {
-    checkAndCreate(defaultProgramPath + '\\Formate\\', fileName, '.json')
-    checkAndCreate(defaultProgramPath + '\\FormateCSS\\', fileName, '.css')
+  subModesData = JSON.parse(fs.readFileSync(defaultProgramPath + '\\Modi\\' + modeName + '.json', 'utf8'))
+  let subModeNames = subModesData.subModes.map(({ format }) => format)
+  subModeNames.forEach(format => {
+    checkAndCreate(defaultProgramPath + '\\Formate\\', format, '.json')
+    checkAndCreate(defaultProgramPath + '\\FormateCSS\\', format, '.css')
   })
 }
 
