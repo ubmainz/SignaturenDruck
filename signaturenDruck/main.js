@@ -35,6 +35,7 @@ require('electron-context-menu')({
 // default main config settings
 const configNew = {
   defaultDownloadPath: 'C:/Export/download.dnl',
+  useFormatRepository: 'https://raw.githubusercontent.com/ubmainz/SignaturenDruck/refs/heads/folio-mainz/signaturenDruck',
   sortByPPN: false,
   useK10plus: true,
   hideDeleteBtn: false,
@@ -384,11 +385,16 @@ function createModeFiles (modeName) {
   })
 }
 
-function checkAndCreate (pathName, fileName, ending) {
+async function checkAndCreate (pathName, fileName, ending) {
   try {
     if (process.argv[1]) {
         let file = fs.readFileSync(path.join(process.argv[1], fileName + ending), 'utf8')
         fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
+      }
+      else if (config.get('useFormatRepository')) {
+      let response = await fetch(config.get('useFormatRepository')+'/defaultFiles/' + fileName + ending)
+      let file = await response.text()
+      fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
       }
       else if (!fs.existsSync(pathName + fileName + ending)) {
         let file = fs.readFileSync(path.join(process.resourcesPath, '.\\defaultFiles\\' + fileName + ending), 'utf8')
