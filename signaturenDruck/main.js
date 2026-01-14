@@ -378,30 +378,49 @@ function checkConfig () {
 function createModeFiles (modeName) {
   checkAndCreate(defaultProgramPath + '\\Modi\\', modeName, '.json')
   subModesData = JSON.parse(fs.readFileSync(defaultProgramPath + '\\Modi\\' + modeName + '.json', 'utf8'))
-  let subModeNames = subModesData.subModes.map(({ format }) => format)
+  const subModeNames = subModesData.subModes.map(({ format }) => format)
   subModeNames.forEach(format => {
     checkAndCreate(defaultProgramPath + '\\Formate\\', format, '.json')
     checkAndCreate(defaultProgramPath + '\\FormateCSS\\', format, '.css')
   })
+  const repo = config.get('useFormatRepository')
+  if (repo) {
+    updateModeFiles(modeName, repo)
+    }
 }
 
-async function checkAndCreate (pathName, fileName, ending) {
+async function updateModeFiles(modeName, repo) {
+  await centralUpdate(defaultProgramPath + '\\Modi\\', modeName, '.json', repo)
+  subModesData = JSON.parse(fs.readFileSync(defaultProgramPath + '\\Modi\\' + modeName + '.json', 'utf8'))
+  const subModeNames = subModesData.subModes.map(({ format }) => format)
+  subModeNames.forEach(format => {
+    centralUpdate(defaultProgramPath + '\\Formate\\', format, '.json', repo)
+    centralUpdate(defaultProgramPath + '\\FormateCSS\\', format, '.css', repo)
+  })  
+}
+
+function checkAndCreate (pathName, fileName, ending) {
   try {
-    if (process.argv[1]) {
-        let file = fs.readFileSync(path.join(process.argv[1], fileName + ending), 'utf8')
+    if (process.argv[1] && process.argv[1].length > 1){
+        const file = fs.readFileSync(path.join(process.argv[1], fileName + ending), 'utf8')
         fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
       }
-      else if (config.get('useFormatRepository')) {
-      let response = await fetch(config.get('useFormatRepository')+'/defaultFiles/' + fileName + ending)
-      let file = await response.text()
-      fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
-      }
-      else if (!fs.existsSync(pathName + fileName + ending)) {
-        let file = fs.readFileSync(path.join(process.resourcesPath, '.\\defaultFiles\\' + fileName + ending), 'utf8')
+    } catch (error) {
+            dialog.showErrorBox(fileName + ending + ': Kopie fehlgeschlagen',error.name + ' - ' + error.message)
+    }
+  if (!fs.existsSync(pathName + fileName + ending)) {
+        const file = fs.readFileSync(path.join(process.resourcesPath, '.\\defaultFiles\\' + fileName + ending), 'utf8')
         fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
-      }
-        } catch (error) {
-            dialog.showErrorBox('Problem mit Formatdatei',error.message)
+  }
+}
+
+async function centralUpdate (pathName, fileName, ending, repo) {
+  try {
+    let response = await fetch(repo + '/defaultFiles/' + fileName + ending)
+    const file = await response.text()
+    fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
+    } catch (error) {
+            dialog.showErrorBox(fileName + ending + ': Update fehlgeschlagen',error.name + ' - ' + error.message)
     }
 }
 
