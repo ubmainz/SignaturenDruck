@@ -420,7 +420,7 @@ async function centralUpdate (pathName, fileName, ending, repo) {
     const file = await response.text()
     fs.writeFileSync(pathName + fileName + ending, file, 'utf8')
     } catch (error) {
-            dialog.showErrorBox(fileName + ending + ': Update fehlgeschlagen',error.name + ' - ' + error.message)
+            dialog.showErrorBox(fileName + ending + ': Update fehlgeschlagen','')
     }
 }
 
