@@ -78,7 +78,7 @@ class ShelfmarksFromSRUData {
        case 'mods':
        case 'info:srw/schema/1/mods-v3.8':
        case 'info:srw/schema/1/mods-v3.7':
-       case 'info:srw/schema/1/mods-v3.6': // at least mods version 3.6
+       case 'info:srw/schema/1/mods-v3.6': // at least mods version 3.6 / FOLIO "Trillium"
           var selectmods = xpath.useNamespaces({"zs": "http://www.loc.gov/zing/srw/", "mods": "http://www.loc.gov/mods/v3"})
           if (dataMode === 'PPN') {
             var uuid = selectmods("string(//mods:itemIdentifier[(@type='uuid') and (../mods:itemIdentifier[@type='barcode']='"+key+"')])", sru)
@@ -98,7 +98,7 @@ class ShelfmarksFromSRUData {
           sig.txtOneLine = [
              selectmods("string(//mods:shelfLocator[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru),
              selectmods("string(//mods:enumerationAndChronology[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru),
-             copyno ? '('+copyno+'.Ex.)' : ''
+             copyno ? '+'+copyno : ''
              ].filter(Boolean).join(" ")
           sig.location = selectmods("string(//mods:subLocation[../mods:itemIdentifier[@type='uuid']='"+uuid+"'])", sru)
           sig.ppn = sig.location
@@ -128,7 +128,7 @@ class ShelfmarksFromSRUData {
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/callNumber)", sru),
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/effectiveCallNumberComponents/suffix)", sru),
              xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/chronology)", sru),
-             copyno ? '('+copyno+'.Ex.)' : ''
+             copyno ? '+'+copyno : ''
              ].filter(Boolean).join(" ")
           sig.location = xpath.select("string(//bareHoldingsItems[hrid='"+hrid+"']/../permanentLocation/name)", sru)
           sig.exNr = hrid
