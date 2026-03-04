@@ -90,7 +90,7 @@
       "id": 5,
       "format": "LBS",
       "useRegEx": true,
-      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)\\W?([^\\(\\.]*[^,\\(\\.])?,?(\\b\\d+\\.Aufl\\.|$|\\s)",
+      "regEx": "^(\\d{2})([A-Z])\\s([0-9/]+)\\W?([^\\+\\(\\.]*[^\\+,\\(\\.])?,?(\\b\\d+\\.Aufl\\.|$|\\s)",
       "delimiter": " ",
       "exampleShelfmark": "13L 082-2,TX/CD,2.Aufl.",
       "result": [

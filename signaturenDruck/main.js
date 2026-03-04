@@ -58,7 +58,7 @@ const configNew = {
     QueryPart1: '?version=1.1&operation=searchRetrieve&query=item.barcode==',
     QueryPart1EPN: '?version=1.1&operation=searchRetrieve&query=holdings.hrid==',
     QueryPart2: '&maximumRecords=1&recordSchema=raw',
-    useCopy: false
+    useCopy: true
   },
   print: {
     printCoverLabel: false,
@@ -325,7 +325,7 @@ function createWindow () {
   }
   // set the mainwindow title (name + version from package.json)
   let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v14 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v15 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
