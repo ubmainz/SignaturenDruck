@@ -324,8 +324,7 @@ function createWindow () {
     Menu.setApplicationMenu(menu)
   }
   // set the mainwindow title (name + version from package.json)
-  let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + config.get('mode.defaultMode') + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v15 - ' + config.get('mode.defaultMode') + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck')
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, '/html/index.html'),
@@ -392,6 +391,8 @@ function createModeFiles (modeName) {
 async function updateModeFiles(modeName, repo) {
   await centralUpdate(defaultProgramPath + '\\Modi\\', modeName, '.json', repo)
   subModesData = JSON.parse(fs.readFileSync(defaultProgramPath + '\\Modi\\' + modeName + '.json', 'utf8'))
+  let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + modeName + '.json')
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v15 - ' + modeName + ': ' + modeinfo.mtime)
   const subModeNames = subModesData.subModes.map(({ format }) => format)
   subModeNames.forEach(format => {
     centralUpdate(defaultProgramPath + '\\Formate\\', format, '.json', repo)
