@@ -393,7 +393,7 @@ async function updateModeFiles(modeName, repo) {
   await centralUpdate(defaultProgramPath + '\\Modi\\', modeName, '.json', repo)
   subModesData = JSON.parse(fs.readFileSync(defaultProgramPath + '\\Modi\\' + modeName + '.json', 'utf8'))
   let modeinfo = fs.statSync(defaultProgramPath + '\\Modi\\' + modeName + '.json')
-  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v15 - ' + modeName + ': ' + modeinfo.mtime)
+  mainWindow.setTitle('Signaturendruck v' + app.getVersion() + ' Mz v15 - ' + modeName + ' (repo): ' + modeinfo.mtime)
   const subModeNames = subModesData.subModes.map(({ format }) => format)
   subModeNames.forEach(format => {
     centralUpdate(defaultProgramPath + '\\Formate\\', format, '.json', repo)
