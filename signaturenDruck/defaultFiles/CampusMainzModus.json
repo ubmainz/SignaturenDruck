@@ -448,7 +448,8 @@
         "$2",
         "$3",
         "$4",
-        "$5"
+        "$5",
+        "MuWi"
       ],
       "exampleLoc": "Philosophicum, Musikwissenschaft, Freihand",
       "locRegEx": "Musikwissenschaft"

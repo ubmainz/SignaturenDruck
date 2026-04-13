@@ -3,14 +3,14 @@
   "printer": "Pica II RVK",
   "label": {
     "width": "25mm",
-    "height": "49mm"
+    "height": "50mm"
   },
   "pdfName": "Musikwissenschaft.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
-  "lines": "5",
+  "lines": "6",
   "example": {
     "shelfmark": "E wa 399.7/6,1",
     "parts": [
@@ -64,7 +64,15 @@
       "bold": false,
       "italic": false,
       "indent": "0"
+    },
+    {
+      "id": 6,
+      "font": "Arial",
+      "fontSize": "12",
+      "bold": false,
+      "italic": false,
+      "indent": "0"
     }
   ],
-  "marginTop": "5"
+  "marginTop": "4"
 }
