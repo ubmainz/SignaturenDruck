@@ -1,16 +1,16 @@
-#previewBox.format_Musik {
+#previewBox.format_Musik_Querformat {
 width: 49mm;
 height: 24mm;
 }
-.format_Musik {
+.format_Musik_Querformat {
 text-align: center;
 white-space: nowrap;
 overflow: hidden;
 }
-.format_Musik {
+.format_Musik_Querformat {
 align-items: center;
 }
-#toPrint.format_Musik > .capsule {
+#toPrint.format_Musik_Querformat > .capsule {
 height: 24mm;
 width: 49mm;
 display: flex;
@@ -18,36 +18,36 @@ justify-content: center;
 flex-direction: column;
 overflow: hidden;
 }
-.format_Musik > .capsule > .innerBox > p,
-.format_Musik > .innerBox > p {
+.format_Musik_Querformat > .capsule > .innerBox > p,
+.format_Musik_Querformat > .innerBox > p {
 margin: 5px 0px 5px 0px;
 }
-.format_Musik > .capsule > .innerBox > .line_1,
-.format_Musik > .innerBox > .line_1 {
+.format_Musik_Querformat > .capsule > .innerBox > .line_1,
+.format_Musik_Querformat > .innerBox > .line_1 {
 font-family: "Arial";
 font-size: 16pt;
 font-weight: bold;
 font-style: normal;
 margin-left: 0%;
 }
-.format_Musik > .capsule > .innerBox > .line_2,
-.format_Musik > .innerBox > .line_2 {
+.format_Musik_Querformat > .capsule > .innerBox > .line_2,
+.format_Musik_Querformat > .innerBox > .line_2 {
 font-family: "Arial Narrow";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 0%;
 }
-.format_Musik > .capsule > .innerBox > .line_3,
-.format_Musik > .innerBox > .line_3 {
+.format_Musik_Querformat > .capsule > .innerBox > .line_3,
+.format_Musik_Querformat > .innerBox > .line_3 {
 font-family: "Arial Narrow";
 font-size: 16pt;
 font-weight: normal;
 font-style: normal;
 margin-left: 0%;
 }
-.format_Musik > .capsule > .innerBox > .line_1,
-.format_Musik > .innerBox > .line_1 {
+.format_Musik_Querformat > .capsule > .innerBox > .line_1,
+.format_Musik_Querformat > .innerBox > .line_1 {
 margin-top: 2mm;
 }
 @media print {

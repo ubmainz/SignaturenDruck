@@ -1,11 +1,11 @@
 {
-  "name": "Musik",
+  "name": "Musik_Querformat",
   "printer": "Pica II RVK",
   "label": {
     "width": "49mm",
     "height": "24mm"
   },
-  "pdfName": "Musik.pdf",
+  "pdfName": "Musik_Querformat.pdf",
   "paper": {
     "width": "50800",
     "height": "25400"

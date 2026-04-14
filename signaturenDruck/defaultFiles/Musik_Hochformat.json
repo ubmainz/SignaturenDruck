@@ -1,25 +1,25 @@
 {
-  "name": "Musikwissenschaft",
+  "name": "Musik_Hochformat",
   "printer": "Pica II RVK",
   "label": {
     "width": "25mm",
     "height": "50mm"
   },
-  "pdfName": "Musikwissenschaft.pdf",
+  "pdfName": "Musik_Hochformat.pdf",
   "paper": {
     "width": "25400",
     "height": "50800"
   },
   "lines": "6",
   "example": {
-    "shelfmark": "E wa 399.7/6,1",
+    "shelfmark": "W 1 Händel IV, 4 (1-2) 2 neu",
     "parts": [
-      "E",
-      "wa",
-      "399.7/",
-      "6,1",
+      "W 1",
+      "Händel",
+      "IV, 4 (1-2) 2 neu",
       "",
-      "MuWi"
+      "",
+      "HfM"
     ]
   },
   "centerHor": true,
@@ -36,7 +36,7 @@
     },
     {
       "id": 2,
-      "font": "Arial",
+      "font": "Arial Narrow",
       "fontSize": "16",
       "bold": false,
       "italic": false,

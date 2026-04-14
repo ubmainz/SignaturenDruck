@@ -456,7 +456,25 @@
     },
     {
       "id": 27,
-      "format": "Musik",
+      "format": "Musik_Hochformat",
+      "useRegEx": true,
+      "regEx": "^([A-Za-zÄÖÜäöüß]+\\s\\d+)\\s(Bach,\\sJ\\.\\sS\\.|[A-Za-zÄÖÜäöüß]{1,10})\\s(.{0,10}$|.{0,10}\\s)(.{0,10})$",
+      "delimiter": " ",
+      "exampleShelfmark": "W 1 Händel IV, 4 (1-2) 2 neu",
+      "result": [
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "",
+        "HfM"
+      ],
+      "exampleLoc": "Philosophicum, Hochschule für Musik, Magazin",
+      "locRegEx": "Hochschule\\sfür\\sMusik"
+    },
+    {
+      "id": 28,
+      "format": "Musik_Querformat",
       "useRegEx": true,
       "regEx": "^([A-Za-zÄÖÜäöüß]+\\s\\d+)\\s(Bach,\\sJ\\.\\sS\\.|[A-Za-zÄÖÜäöüß]+)\\s?(.*)$",
       "delimiter": " ",
