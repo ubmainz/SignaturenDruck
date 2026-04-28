@@ -458,7 +458,7 @@
       "id": 27,
       "format": "Musik_Hochformat",
       "useRegEx": true,
-      "regEx": "^([A-Za-zÄÖÜäöüß]+\\s\\d+)\\s(Bach,\\sJ\\.\\sS\\.|[A-Za-zÄÖÜäöüß]{1,10})\\s(.{0,10}$|.{0,10}\\s)(.{0,10}$|.{0,10}\\s)(.{0,10})$",
+      "regEx": "^([A-Za-zÄÖÜäöüß]+\\s\\d+)\\s(Bach,\\sJ\\.\\sS\\.|[A-Za-zÄÖÜäöüß]+)\\s?(.{0,10}[^\\s]*\\s?)(.{0,10}[^\\s]*\\s?)(.*)$",
       "delimiter": " ",
       "exampleShelfmark": "W 1 Händel IV, 4 (1-2) 2 neu",
       "result": [
